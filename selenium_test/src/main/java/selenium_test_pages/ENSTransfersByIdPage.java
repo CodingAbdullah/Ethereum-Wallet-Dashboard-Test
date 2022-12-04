@@ -27,7 +27,7 @@ public class ENSTransfersByIdPage {
 	private WebElement clearButtonElement;
 	
 	
-	// Page Object Model in action for ENSToAddress page
+	// Page Object Model in action for ENSTransfersById page
 	public ENSTransfersByIdPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
