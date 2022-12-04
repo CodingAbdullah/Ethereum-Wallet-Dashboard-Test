@@ -79,5 +79,4 @@ public class ENSToAddressPage {
 	public WebElement getClearButtonElement() {
 		return this.clearButtonElement;
 	}
-	
 }
