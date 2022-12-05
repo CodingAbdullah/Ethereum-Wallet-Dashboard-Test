@@ -82,37 +82,37 @@ public class ERC20TokenHoldingsPage {
 	public void clickNavbarButtonElement() {
 		this.navbarButtonElement.click();
 	}
-	
+
 	public WebElement getNavbarInputElement() {
-		return this.navbarInputElement;
+		return navbarInputElement;
 	}
-	
+
 	public WebElement getNavbarButtonElement() {
-		return this.navbarButtonElement;
-	}
-	
-	public WebElement getERC20HoldingsInputElement() {
-		return this.erc20HoldingsInputElement;
-	}
-	
-	public WebElement getSubmitButtonElement() {
-		return this.submitButtonElement;
-	}
-	
-	public WebElement getHomeButtonElement() {
-		return this.homeButtonElement;
-	}
-	
-	public WebElement getClearButtonElement() {
-		return this.clearButtonElement;
+		return navbarButtonElement;
 	}
 
 	public WebElement getErc20HoldingsMainElement() {
 		return erc20HoldingsMainElement;
 	}
 
+	public WebElement getSubmitButtonElement() {
+		return submitButtonElement;
+	}
+
+	public WebElement getHomeButtonElement() {
+		return homeButtonElement;
+	}
+
+	public WebElement getClearButtonElement() {
+		return clearButtonElement;
+	}
+
 	public WebElement getErc20HoldingsInstructionTitleElement() {
 		return erc20HoldingsInstructionTitleElement;
+	}
+
+	public WebElement getErc20HoldingsInputElement() {
+		return erc20HoldingsInputElement;
 	}
 
 	public WebElement getErc20HoldingsNetworkSelectorTitleElement() {

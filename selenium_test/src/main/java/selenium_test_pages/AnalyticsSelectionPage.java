@@ -49,32 +49,32 @@ public class AnalyticsSelectionPage {
 	public void clickWalletAnalyticsButtonElement() {
 		this.walletAnalyticsButtonElement.click();
 	}
-	
-	public WebElement getTokenAnalyticsButtonElement() {
-		return this.tokenAnalyticsButtonElement;
-	}
-	
-	public WebElement getWalletAnalyticsButtonElement() {
-		return this.walletAnalyticsButtonElement;
-	}
-	
-	public WebElement getTokenAnalyticsTitleElement() {
-		return this.tokenAnalyticsTitleElement;
-	}
-	
-	public WebElement getWalletAnalyticsTitleElement() {
-		return this.walletAnalyticsTitleElement;
-	}
-	
+
 	public WebElement getNavbarInputElement() {
-		return this.navbarInputElement;
+		return navbarInputElement;
 	}
-	
+
 	public WebElement getNavbarButtonElement() {
-		return this.navbarButtonElement;
+		return navbarButtonElement;
 	}
-	
+
 	public WebElement getAnalyticsTitleElement() {
-		return this.analyticsTitleElement;
+		return analyticsTitleElement;
+	}
+
+	public WebElement getTokenAnalyticsTitleElement() {
+		return tokenAnalyticsTitleElement;
+	}
+
+	public WebElement getWalletAnalyticsTitleElement() {
+		return walletAnalyticsTitleElement;
+	}
+
+	public WebElement getTokenAnalyticsButtonElement() {
+		return tokenAnalyticsButtonElement;
+	}
+
+	public WebElement getWalletAnalyticsButtonElement() {
+		return walletAnalyticsButtonElement;
 	}
 }

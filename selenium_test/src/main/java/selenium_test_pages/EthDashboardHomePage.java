@@ -31,30 +31,6 @@ public class EthDashboardHomePage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public WebElement getNavbarInputElement() {
-		return this.navbarInputElement;
-	}
-	
-	public WebElement getNavbarButtonElement() {
-		return this.navbarButtonElement;
-	}
-	
-	public WebElement getDashboardInputElement() {
-		return this.dashboardInputElement;
-	}
-	
-	public WebElement getDashboardButtonElement() {
-		return this.dashboardButtonElement;
-	}
-	
-	public WebElement getBTCChartButtonElement() {
-		return this.btcChartButtonElement;
-	}
-	
-	public WebElement getETHChartButtonElement() {
-		return this.ethChartButtonElement;
-	}
-	
 	public void setDashboardInputElement(String keys) {
 		this.dashboardInputElement.sendKeys(keys);
 	}
@@ -77,5 +53,29 @@ public class EthDashboardHomePage {
 	
 	public void clickETHChartButtonElement() {
 		this.ethChartButtonElement.click();
+	}
+
+	public WebElement getNavbarInputElement() {
+		return navbarInputElement;
+	}
+
+	public WebElement getNavbarButtonElement() {
+		return navbarButtonElement;
+	}
+
+	public WebElement getDashboardInputElement() {
+		return dashboardInputElement;
+	}
+
+	public WebElement getDashboardButtonElement() {
+		return dashboardButtonElement;
+	}
+
+	public WebElement getBtcChartButtonElement() {
+		return btcChartButtonElement;
+	}
+
+	public WebElement getEthChartButtonElement() {
+		return ethChartButtonElement;
 	}
 }

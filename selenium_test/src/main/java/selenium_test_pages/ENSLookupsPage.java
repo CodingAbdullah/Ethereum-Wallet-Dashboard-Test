@@ -69,44 +69,49 @@ public class ENSLookupsPage {
 	public void clickENSTransfersByIdButtonElement() {
 		this.ensTransfersByIdButtonElement.click();
 	}
-	
-	public WebElement getAddressToENSTitleElement() {
-		return this.addressToEnsTitleElement;
-	}
-	
-	public WebElement getENSToAddressTitleElement() {
-		return this.ensToAddressTitleElement;
-	}
-	
-	public WebElement getENSTransfersByNameTitleElement() {
-		return this.ensTransfersByNameElement;
-	}
-	
-	public WebElement getENSTransfersByIdTitleElement() {
-		return this.ensTransfersByIdElement;
-	}
-	
-	public WebElement getAddressToENSButtonElement() {
-		return this.addressToEnsButtonElement;
-	}
-	
-	public WebElement getENSToAddressButtonElement() {
-		return this.ensToAddressButtonElement;
-	}
-	
-	public WebElement getENSTransfersByNameButtonElement() {
-		return this.ensTransfersByNameButtonElement;
-	}
-	
-	public WebElement getENSTransfersByIdButtonElement() {
-		return this.ensTransfersByIdButtonElement;
-	}
-	
+
 	public WebElement getNavbarInputElement() {
-		return this.navbarInputElement;
+		return navbarInputElement;
+	}
+
+	public WebElement getNavbarButtonElement() {
+		return navbarButtonElement;
+	}
+
+	public WebElement getEnsLookupsTitleElement() {
+		return ensLookupsTitleElement;
+	}
+
+	public WebElement getAddressToEnsTitleElement() {
+		return addressToEnsTitleElement;
+	}
+
+	public WebElement getEnsToAddressTitleElement() {
+		return ensToAddressTitleElement;
+	}
+
+	public WebElement getEnsTransfersByNameElement() {
+		return ensTransfersByNameElement;
+	}
+
+	public WebElement getEnsTransfersByIdElement() {
+		return ensTransfersByIdElement;
+	}
+
+	public WebElement getAddressToEnsButtonElement() {
+		return addressToEnsButtonElement;
+	}
+
+	public WebElement getEnsToAddressButtonElement() {
+		return ensToAddressButtonElement;
+	}
+
+	public WebElement getEnsTransfersByNameButtonElement() {
+		return ensTransfersByNameButtonElement;
+	}
+
+	public WebElement getEnsTransfersByIdButtonElement() {
+		return ensTransfersByIdButtonElement;
 	}
 	
-	public WebElement getNavbarButtonElement() {
-		return this.navbarButtonElement;
-	}
 }

@@ -76,56 +76,56 @@ public class ERC20CollectionPage {
 	public void clickSubmitButtonElement() {
 		this.submitButtonElement.click();
 	}
-	
+
 	public WebElement getNavbarInputElement() {
-		return this.navbarInputElement;
+		return navbarInputElement;
 	}
-	
+
 	public WebElement getNavbarButtonElement() {
-		return this.navbarButtonElement;
+		return navbarButtonElement;
 	}
-	
+
+	public WebElement getErc20CollectionTitleElement() {
+		return erc20CollectionTitleElement;
+	}
+
+	public WebElement getErc20CollectionDescriptionElement() {
+		return erc20CollectionDescriptionElement;
+	}
+
 	public WebElement getAddressInputElement() {
-		return this.addressInputElement;
+		return addressInputElement;
 	}
-	
+
 	public WebElement getSubmitButtonElement() {
-		return this.submitButtonElement;
+		return submitButtonElement;
 	}
-	
+
 	public WebElement getHomeButtonElement() {
-		return this.homeButtonElement;
+		return homeButtonElement;
 	}
-	
+
 	public WebElement getClearButtonElement() {
-		return this.clearButtonElement;
+		return clearButtonElement;
 	}
-	
-	public WebElement getERC20CollectionTitleElement() {
-		return this.erc20CollectionTitleElement;
+
+	public WebElement getErc20PriceTitleElement() {
+		return erc20PriceTitleElement;
 	}
-	
-	public WebElement getERC20CollectionDescriptionElement() {
-		return this.erc20CollectionDescriptionElement;
+
+	public WebElement getErc20StatisticsTitleElement() {
+		return erc20StatisticsTitleElement;
 	}
-	
-	public WebElement getERC20PriceTitleElement() {
-		return this.erc20PriceTitleElement;
+
+	public WebElement getErc20StatisticsTableElement() {
+		return erc20StatisticsTableElement;
 	}
-	
-	public WebElement getERC20StatisticsTitleElement() {
-		return this.erc20StatisticsTitleElement;
+
+	public WebElement getErc20TransfersTitleElement() {
+		return erc20TransfersTitleElement;
 	}
-	
-	public WebElement getERC20StatisticsTableElement() {
-		return this.erc20StatisticsTableElement;
-	}
-	
-	public WebElement getERC20TransfersTitleElement() {
-		return this.erc20TransfersTitleElement;
-	}
-	
-	public WebElement getERC20TransfersTableElement() {
-		return this.erc20TransfersTableElement;
+
+	public WebElement getErc20TransfersTableElement() {
+		return erc20TransfersTableElement;
 	}
 }

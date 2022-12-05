@@ -57,48 +57,48 @@ public class AboutPage {
 	public void clickHomeButtonElement() {
 		this.aboutPageButtonElement.click();
 	}
-	
+
 	public WebElement getNavbarInputElement() {
-		return this.navbarInputElement;
+		return navbarInputElement;
 	}
-	
+
 	public WebElement getNavbarButtonElement() {
-		return this.navbarButtonElement;
+		return navbarButtonElement;
 	}
-	
-	public WebElement getHomeButtonElement() {
-		return this.aboutPageButtonElement;
+
+	public WebElement getAboutPageButtonElement() {
+		return aboutPageButtonElement;
 	}
-	
+
 	public WebElement getAboutTitleElement() {
-		return this.aboutTitleElement;
+		return aboutTitleElement;
 	}
-	
+
 	public WebElement getAboutDescriptionElement() {
-		return this.aboutDescriptionElement;
+		return aboutDescriptionElement;
 	}
-	
+
 	public WebElement getFeaturesTitleElement() {
-		return this.featuresTitleElement;
+		return featuresTitleElement;
 	}
-	
+
 	public WebElement getFeaturesDescriptionElement() {
-		return this.featuresDescriptionElement;
+		return featuresDescriptionElement;
 	}
-	
+
 	public WebElement getCreditsTitleElement() {
-		return this.creditsTitleElement;
+		return creditsTitleElement;
 	}
-	
+
 	public WebElement getCreditsDescriptionElement() {
-		return this.creditsDescriptionElement;
+		return creditsDescriptionElement;
 	}
-	
+
 	public WebElement getDeveloperTitleElement() {
-		return this.developerTitleElement;
+		return developerTitleElement;
 	}
-	
+
 	public WebElement getDeveloperDescriptionElement() {
-		return this.developerDescriptionElement;
+		return developerDescriptionElement;
 	}
 }

@@ -55,28 +55,28 @@ public class ENSTransfersByNamePage {
 		public void clickLookupReversalButtonElement() {
 			this.lookupTransfersButtonElement.click();
 		}
-		
+
 		public WebElement getNavbarInputElement() {
-			return this.navbarInputElement;
+			return navbarInputElement;
 		}
-		
+
 		public WebElement getNavbarButtonElement() {
-			return this.navbarButtonElement;
+			return navbarButtonElement;
 		}
-		
+
 		public WebElement getAddressInputElement() {
-			return this.addressInputElement;
+			return addressInputElement;
 		}
-		
-		public WebElement getLookupReversalButtonElement() {
-			return this.lookupTransfersButtonElement;
+
+		public WebElement getLookupTransfersButtonElement() {
+			return lookupTransfersButtonElement;
 		}
-		
+
 		public WebElement getHomeButtonElement() {
-			return this.homeButtonElement;
+			return homeButtonElement;
 		}
-		
+
 		public WebElement getClearButtonElement() {
-			return this.clearButtonElement;
+			return clearButtonElement;
 		}
 }

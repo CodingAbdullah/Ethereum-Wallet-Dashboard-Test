@@ -50,32 +50,32 @@ public class TokenAnalyticsPage {
 	public void setERC721ButtonElement() {
 		this.erc721ButtonElement.click();
 	}
-	
+
 	public WebElement getNavbarInputElement() {
-		return this.navbarInputElement;
+		return navbarInputElement;
 	}
-	
+
 	public WebElement getNavbarButtonElement() {
-		return this.navbarButtonElement;
+		return navbarButtonElement;
 	}
-	
+
 	public WebElement getTokenAnalyticsTitleElement() {
-		return this.tokenAnalyticsTitleElement;
+		return tokenAnalyticsTitleElement;
 	}
-	
-	public WebElement getERC20TitleElement() {
-		return this.erc20TitleElement;
+
+	public WebElement getErc20TitleElement() {
+		return erc20TitleElement;
 	}
-	
-	public WebElement getERC721TitleElement() {
-		return this.erc721TitleElement;
+
+	public WebElement getErc721TitleElement() {
+		return erc721TitleElement;
 	}
-	
-	public WebElement getERC20ButtonElement() {
-		return this.erc20ButtonElement;
+
+	public WebElement getErc20ButtonElement() {
+		return erc20ButtonElement;
 	}
-	
-	public WebElement getERC721ButtonElement() {
-		return this.erc721ButtonElement;
+
+	public WebElement getErc721ButtonElement() {
+		return erc721ButtonElement;
 	}
 }

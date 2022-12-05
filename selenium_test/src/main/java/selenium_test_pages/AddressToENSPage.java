@@ -85,69 +85,68 @@ public class AddressToENSPage {
 	public void clickClearButtonElement() {
 		this.clearButtonElement.click();
 	}
-	
-	
-	public WebElement getNavbarButtonElement() {
-		return this.navbarButtonElement;
-	}
-	
+
 	public WebElement getNavbarInputElement() {
-		return this.navbarInputElement;
+		return navbarInputElement;
 	}
-	
-	public WebElement getAddressToENSInputElement() {
-		return this.addressInputElement;
+
+	public WebElement getNavbarButtonElement() {
+		return navbarButtonElement;
 	}
-	
+
+	public WebElement getAddressInputElement() {
+		return addressInputElement;
+	}
+
 	public WebElement getLookupReversalButtonElement() {
-		return this.lookupReversalButtonElement;
+		return lookupReversalButtonElement;
 	}
-	
+
 	public WebElement getHomeButtonElement() {
-		return this.homeButtonElement;
+		return homeButtonElement;
 	}
-	
+
 	public WebElement getClearButtonElement() {
-		return this.clearButtonElement;
+		return clearButtonElement;
 	}
-	
+
 	public WebElement getResolverTitleElement() {
-		return this.nameResolveToAddressTitleElement;
+		return resolverTitleElement;
 	}
-	
-	public WebElement getResolverTableElement() {
-		return this.nameResolveToAddressTableElement;
+
+	public WebElement getResolverTableTitleElement() {
+		return resolverTableTitleElement;
 	}
-	
-	public WebElement getResolvedNameElement() {
-		return this.resolverNameElement;
+
+	public WebElement getResolverNameElement() {
+		return resolverNameElement;
 	}
-	
-	public WebElement getResolvedNameLinkElement() {
-		return this.resolverLinkElement;
+
+	public WebElement getResolverLinkElement() {
+		return resolverLinkElement;
 	}
-	
+
 	public WebElement getAdditionalInformationTitleElement() {
-		return this.additionalInformationTitleElement;
+		return additionalInformationTitleElement;
 	}
-	
+
 	public WebElement getAdditionalInformationTableElement() {
-		return this.additionalInformationTableElement;
+		return additionalInformationTableElement;
 	}
-	
+
 	public WebElement getNamesToOwnerTitleElement() {
-		return this.namesToOwnerTitleElement;
+		return namesToOwnerTitleElement;
 	}
-	
+
 	public WebElement getNamesToOwnerTableElement() {
-		return this.namesToOwnerTableElement;
+		return namesToOwnerTableElement;
 	}
-	
-	public WebElement getNamesToResolverTitleElement() {
-		return this.nameResolveToAddressTitleElement;
+
+	public WebElement getNameResolveToAddressTitleElement() {
+		return nameResolveToAddressTitleElement;
 	}
-	
-	public WebElement getNamesToResolverTableElement() {
-		return this.namesToOwnerTableElement;
+
+	public WebElement getNameResolveToAddressTableElement() {
+		return nameResolveToAddressTableElement;
 	}
 }

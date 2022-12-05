@@ -50,40 +50,40 @@ public class GasStationPage {
 		public void clickNavbarButtonElement() {
 			this.navbarButtonElement.click();
 		}
-		
+
 		public WebElement getNavbarInputElement() {
-			return this.navbarInputElement;
+			return navbarInputElement;
 		}
-		
+
 		public WebElement getNavbarButtonElement() {
-			return this.navbarButtonElement;
+			return navbarButtonElement;
 		}
-		
+
 		public WebElement getGasInformationTitleElement() {
-			return this.gasInformationTitleElement;
+			return gasInformationTitleElement;
 		}
-		
+
 		public WebElement getGeneralMetricsTitleElement() {
-			return this.generalMetricsTitleElement;
+			return generalMetricsTitleElement;
 		}
-	
-		public WebElement getBaseFeesTitleElement() {
-			return this.baseFeesTitleElement;
+
+		public List<WebElement> getGasMetricsListElement() {
+			return gasMetricsListElement;
 		}
-		
+
 		public WebElement getBlockPricesTitleElement() {
-			return this.blockPricesTitleElement;
+			return blockPricesTitleElement;
 		}
-		
-		public List<WebElement> getGasMetricsListElement(){
-			return this.gasMetricsListElement;
+
+		public List<WebElement> getBlockPricesListElement() {
+			return blockPricesListElement;
 		}
-		
-		public List<WebElement> getBlockPricesListElement(){
-			return this.blockPricesListElement;
+
+		public WebElement getBaseFeesTitleElement() {
+			return baseFeesTitleElement;
 		}
-		
-		public List<WebElement> getBaseFeesListElement(){
-			return this.baseFeesListElement;
+
+		public List<WebElement> getBaseFeesListElement() {
+			return baseFeesListElement;
 		}
 }

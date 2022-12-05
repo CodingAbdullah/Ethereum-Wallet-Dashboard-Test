@@ -91,7 +91,7 @@ public class ERC721HoldingsPage {
 	public void clickSubmitButtonElement() {
 		this.submitButtonElement.click();
 	}
-	
+
 	public WebElement getSubmitButtonElement() {
 		return submitButtonElement;
 	}
@@ -132,15 +132,15 @@ public class ERC721HoldingsPage {
 		return erc721HoldingsTitleElement;
 	}
 
+	public WebElement getErc721HoldingsTableElement() {
+		return erc721HoldingsTableElement;
+	}
+
 	public WebElement getErc721HoldingsTransfersTitleElement() {
 		return erc721HoldingsTransfersTitleElement;
 	}
 
 	public WebElement getErc721HoldingsTransfersTableElement() {
 		return erc721HoldingsTransfersTableElement;
-	}
-	
-	public WebElement getErc721HoldingsTableElement() {
-		return erc721HoldingsTableElement;
 	}
 }

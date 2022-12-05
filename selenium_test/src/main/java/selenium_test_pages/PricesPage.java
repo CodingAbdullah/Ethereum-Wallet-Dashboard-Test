@@ -40,24 +40,25 @@ public class PricesPage {
 	public void clickHideCoinPricesButtonElement() {
 		this.hideCoinPricesButtonElement.click();
 	}
-	
+
 	public WebElement getCoinPricesButtonElement() {
-		return this.coinPricesButtonElement;
+		return coinPricesButtonElement;
 	}
-	
-	public WebElement getHideCoinPricesButtonElement() {
-		return this.hideCoinPricesButtonElement;
-	}
-	
+
 	public WebElement getPricesPageTitleElement() {
-		return this.pricesPageTitleElement;
+		return pricesPageTitleElement;
 	}
-	
+
 	public WebElement getPricesPageDescriptionElement() {
-		return this.pricesPageDescriptionElement;
+		return pricesPageDescriptionElement;
+	}
+
+	public List<WebElement> getCoinPricesCardsElement() {
+		return coinPricesCardsElement;
+	}
+
+	public WebElement getHideCoinPricesButtonElement() {
+		return hideCoinPricesButtonElement;
 	}
 	
-	public List<WebElement> getCoinPricesCardElement(){
-		return this.coinPricesCardsElement;
-	}
 }

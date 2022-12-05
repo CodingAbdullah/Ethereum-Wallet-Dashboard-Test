@@ -91,6 +91,76 @@ public class WalletAnalyticsPage {
 	public void clickSubmitButtonElement() {
 		this.submitButtonElement.click();
 	}
-	
-	
+
+	public WebElement getNavbarInputElement() {
+		return navbarInputElement;
+	}
+
+	public WebElement getNavbarButtonElement() {
+		return navbarButtonElement;
+	}
+
+	public WebElement getAddressInputElement() {
+		return addressInputElement;
+	}
+
+	public WebElement getNetworkSelectorDescriptionTitleElement() {
+		return networkSelectorDescriptionTitleElement;
+	}
+
+	public List<WebElement> getNetworkSelectorLabelsElement() {
+		return networkSelectorLabelsElement;
+	}
+
+	public List<WebElement> getNetworkSelectorInputsElement() {
+		return networkSelectorInputsElement;
+	}
+
+	public WebElement getSubmitButtonElement() {
+		return submitButtonElement;
+	}
+
+	public WebElement getHomeButtonElement() {
+		return homeButtonElement;
+	}
+
+	public WebElement getClearButtonElement() {
+		return clearButtonElement;
+	}
+
+	public WebElement getBalanceInformationTitleElement() {
+		return balanceInformationTitleElement;
+	}
+
+	public WebElement getWalletBalanceTitleElement() {
+		return walletBalanceTitleElement;
+	}
+
+	public WebElement getWalletAmountTitleElement() {
+		return walletAmountTitleElement;
+	}
+
+	public WebElement getWalletTransactionTitleElement() {
+		return walletTransactionTitleElement;
+	}
+
+	public WebElement getWalletTransactionTableElement() {
+		return walletTransactionTableElement;
+	}
+
+	public WebElement getWalletERC20HoldingsTitleElement() {
+		return walletERC20HoldingsTitleElement;
+	}
+
+	public WebElement getWalletERC20HoldingsTableElement() {
+		return walletERC20HoldingsTableElement;
+	}
+
+	public WebElement getWalletERC721HoldingsTitleElement() {
+		return walletERC721HoldingsTitleElement;
+	}
+
+	public WebElement getWalletERC721HoldingsTableElement() {
+		return walletERC721HoldingsTableElement;
+	}
 }

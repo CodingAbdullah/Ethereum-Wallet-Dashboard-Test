@@ -50,32 +50,32 @@ public class ENSERC721SelectionPage {
 	public void clickERC721LookupsButtonElement() {
 		this.erc721LookupsButtonElement.click();
 	}
-	
+
 	public WebElement getNavbarInputElement() {
-		return this.navbarInputElement;
+		return navbarInputElement;
 	}
-	
+
 	public WebElement getNavbarButtonElement() {
-		return this.navbarButtonElement;
+		return navbarButtonElement;
 	}
-	
-	public WebElement getENSERC721TitleElement() {
-		return this.ensERC721TitleElement;
+
+	public WebElement getEnsERC721TitleElement() {
+		return ensERC721TitleElement;
 	}
-	
-	public WebElement getENSLookupsButtonElement() {
-		return this.ensLookupsButtonElement;
+
+	public WebElement getEnsLookupsTitleElement() {
+		return ensLookupsTitleElement;
 	}
-	
-	public WebElement getERC721LookupsButtonElement() {
-		return this.erc721LookupsButtonElement;
+
+	public WebElement getErc721LookupsTitleElement() {
+		return erc721LookupsTitleElement;
 	}
-	
-	public WebElement getERC721LookupsTitleElement() {
-		return this.erc721LookupsTitleElement;
+
+	public WebElement getEnsLookupsButtonElement() {
+		return ensLookupsButtonElement;
 	}
-	
-	public WebElement getENSLookupsTitleElement() {
-		return this.ensLookupsTitleElement;
-	}	
+
+	public WebElement getErc721LookupsButtonElement() {
+		return erc721LookupsButtonElement;
+	}
 }

@@ -96,13 +96,37 @@ public class ERC721CollectionPage {
 	public void clickSubmitButtonElement() {
 		this.submitButtonElement.click();
 	}
-	
+
+	public WebElement getNavbarInputElement() {
+		return navbarInputElement;
+	}
+
+	public WebElement getNavbarButtonElement() {
+		return navbarButtonElement;
+	}
+
 	public WebElement getErc721CollectionTitleElement() {
 		return erc721CollectionTitleElement;
 	}
 
 	public WebElement getErc721CollectionDescriptionElement() {
 		return erc721CollectionDescriptionElement;
+	}
+
+	public WebElement getAddressInputElement() {
+		return addressInputElement;
+	}
+
+	public WebElement getSubmitButtonElement() {
+		return submitButtonElement;
+	}
+
+	public WebElement getHomeButtonElement() {
+		return homeButtonElement;
+	}
+
+	public WebElement getClearButtonElement() {
+		return clearButtonElement;
 	}
 
 	public WebElement getErc721CollectionNameTitleElement() {
@@ -147,29 +171,5 @@ public class ERC721CollectionPage {
 
 	public WebElement getErc721CollectionRecentSalesTableElement() {
 		return erc721CollectionRecentSalesTableElement;
-	}
-
-	public WebElement getNavbarInputElement() {
-		return this.navbarInputElement;
-	}
-	
-	public WebElement getNavbarButtonElement() {
-		return this.navbarButtonElement;
-	}
-	
-	public WebElement getAddressInputElement() {
-		return this.addressInputElement;
-	}
-	
-	public WebElement getSubmitButtonElement() {
-		return this.submitButtonElement;
-	}
-	
-	public WebElement getHomeButtonElement() {
-		return this.homeButtonElement;
-	}
-	
-	public WebElement getClearButtonElement() {
-		return this.clearButtonElement;
 	}
 }

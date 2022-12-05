@@ -75,27 +75,11 @@ public class ERC20TokenPricesPage {
 	}
 
 	public WebElement getNavbarInputElement() {
-		return this.navbarInputElement;
+		return navbarInputElement;
 	}
-	
+
 	public WebElement getNavbarButtonElement() {
-		return this.navbarButtonElement;
-	}
-	
-	public WebElement getAddressInputElement() {
-		return this.addressInputElement;
-	}
-	
-	public WebElement getSubmitButtonElement() {
-		return this.submitButtonElement;
-	}
-	
-	public WebElement getHomeButtonElement() {
-		return this.homeButtonElement;
-	}
-	
-	public WebElement getClearButtonElement() {
-		return this.clearButtonElement;
+		return navbarButtonElement;
 	}
 
 	public WebElement getErc20TokenPricesMainTitleElement() {
@@ -104,6 +88,22 @@ public class ERC20TokenPricesPage {
 
 	public WebElement getErc20TokenPricesDescriptionElement() {
 		return erc20TokenPricesDescriptionElement;
+	}
+
+	public WebElement getAddressInputElement() {
+		return addressInputElement;
+	}
+
+	public WebElement getSubmitButtonElement() {
+		return submitButtonElement;
+	}
+
+	public WebElement getHomeButtonElement() {
+		return homeButtonElement;
+	}
+
+	public WebElement getClearButtonElement() {
+		return clearButtonElement;
 	}
 
 	public WebElement getErc20TokenNameTitleElement() {
