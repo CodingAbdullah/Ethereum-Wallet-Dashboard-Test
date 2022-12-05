@@ -17,6 +17,9 @@ public class ERC20CollectionPage {
 	@FindBy(xpath="//div[@class='App']//div[3]//div//main[1]//div//h1")
 	private WebElement erc20CollectionTitleElement;
 	
+	@FindBy(xpath="//div[@class='App']//div[3]//div//main[1]//div[2]//p")
+	private WebElement erc20CollectionDescriptionElement;
+	
 	@FindBy(xpath="//div[@class='App']//div[3]//div//main[1]//div[2]//form//input")
 	private WebElement addressInputElement;
 	
@@ -100,6 +103,10 @@ public class ERC20CollectionPage {
 	
 	public WebElement getERC20CollectionTitleElement() {
 		return this.erc20CollectionTitleElement;
+	}
+	
+	public WebElement getERC20CollectionDescriptionElement() {
+		return this.erc20CollectionDescriptionElement;
 	}
 	
 	public WebElement getERC20PriceTitleElement() {
