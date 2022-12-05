@@ -1,5 +1,7 @@
 package selenium_test_pages;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,19 +12,57 @@ public class ERC721HoldingsPage {
 
 	@FindBy(xpath="//nav//form//input")
 	private WebElement navbarInputElement;
-	
+
 	@FindBy(xpath="//nav//form//button")
 	private WebElement navbarButtonElement;
-	
-	@FindBy(xpath="//div[@class='App']//div[3]//div//main[1]//div[2]//form//input")
-	private WebElement addressInputElement;
 	
 	@FindBy(xpath="//div[@class='App']//div[3]//div//main[1]//div[2]//form//button")
 	private WebElement submitButtonElement;
 	
 	@FindBy(xpath="//div[@class='App']//div[3]//div//main[1]//div[2]//button[1]")
 	private WebElement homeButtonElement;
+
+	@FindBy(xpath="//div[@class='App']//div[3]//div//main[1]//div[1]//h2")
+	private WebElement erc721HoldingsMainElement;
 	
+	@FindBy(xpath="//div[@class='App']//div[3]//div//main[1]//div[2]//button[2]")
+	private WebElement clearButtonElement;
+		
+	@FindBy(xpath="//div[@class='App']//div[3]//div//main[1]//div[2]//div//form//label")
+	private WebElement erc721HoldingsInstructionTitleElement;
+
+	@FindBy(xpath="//div[@class='App']//div[3]//div//main[1]//div[2]//div//form//input")
+	private WebElement erc721HoldingsInputElement;
+	
+	@FindBy(xpath="//div[@class='App']//div[3]//div//main[1]//div[2]//div//form//main//label//p")
+	private WebElement erc721HoldingsNetworkSelectorTitleElement;
+	
+	@FindBy(xpath="//div[@class='App']//div[3]//div//main[1]//div[2]//div//form//main//div[@class='form-check']//label")
+	private List<WebElement> erc721HoldingsNetworkSelectorLabelsElement;
+	
+	@FindBy(xpath="//div[@class='App']//div[3]//div//main[1]//div[2]//div//form//main//div[@class='form-check']//input")
+	private List<WebElement> erc721HoldingsNetworkSelectorsElement;
+	
+	@FindBy(xpath="//div[@class='App']//div[3]//div//main[2]//div//main//div//h3")
+	private WebElement erc721HoldingsTitleElement;
+	
+	@FindBy(xpath="//div[@class='App']//div[3]//div//main[2]//div//div//table")
+	private WebElement erc721HoldingsTableElement;
+	
+	@FindBy(xpath="//div[@class='App']//div[3]//div//main[3]//div//main//div//h3")
+	private WebElement erc721HoldingsTransfersTitleElement;
+	
+	@FindBy(xpath="//div[@class='App']//div[3]//div//main[3]//div//table")
+	private WebElement erc721HoldingsTransfersTableElement;
+	
+	
+	public void setNavbarInputElement(String keys) {
+		this.navbarInputElement.sendKeys(keys);
+	}
+
+	public void setERC721HoldingsInputElement(String keys) {
+		this.erc721HoldingsInputElement.sendKeys(keys);
+	}
 	
 	public ERC721HoldingsPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -34,5 +74,73 @@ public class ERC721HoldingsPage {
 	
 	public WebElement getNavbarButtonElement() {
 		return this.navbarButtonElement;
+	}
+	
+	public void clickNavbarButtonElement() {
+		this.navbarButtonElement.click();
+	}
+	
+	public void clickHomeButtonElement() {
+		this.homeButtonElement.click();
+	}
+	
+	public void clickClearButtonElement() {
+		this.clearButtonElement.click();
+	}
+	
+	public void clickSubmitButtonElement() {
+		this.submitButtonElement.click();
+	}
+	
+	public WebElement getSubmitButtonElement() {
+		return submitButtonElement;
+	}
+
+	public WebElement getHomeButtonElement() {
+		return homeButtonElement;
+	}
+
+	public WebElement getErc721HoldingsMainElement() {
+		return erc721HoldingsMainElement;
+	}
+
+	public WebElement getClearButtonElement() {
+		return clearButtonElement;
+	}
+
+	public WebElement getErc721HoldingsInstructionTitleElement() {
+		return erc721HoldingsInstructionTitleElement;
+	}
+
+	public WebElement getErc721HoldingsInputElement() {
+		return erc721HoldingsInputElement;
+	}
+
+	public WebElement getErc721HoldingsNetworkSelectorTitleElement() {
+		return erc721HoldingsNetworkSelectorTitleElement;
+	}
+
+	public List<WebElement> getErc721HoldingsNetworkSelectorLabelsElement() {
+		return erc721HoldingsNetworkSelectorLabelsElement;
+	}
+
+	public List<WebElement> getErc721HoldingsNetworkSelectorsElement() {
+		return erc721HoldingsNetworkSelectorsElement;
+	}
+
+	public WebElement getErc721HoldingsTitleElement() {
+		return erc721HoldingsTitleElement;
+	}
+
+	public WebElement getErc721HoldingsTransfersTitleElement() {
+		return erc721HoldingsTransfersTitleElement;
+	}
+
+	public WebElement getErc721HoldingsTransfersTableElement() {
+		return erc721HoldingsTransfersTableElement;
+	}
+	
+	public WebElement getErc721HoldingsTableElement() {
+		return erc721HoldingsTableElement;
 	}
 }

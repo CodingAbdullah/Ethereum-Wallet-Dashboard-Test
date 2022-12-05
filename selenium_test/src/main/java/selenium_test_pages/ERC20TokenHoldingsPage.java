@@ -79,6 +79,10 @@ public class ERC20TokenHoldingsPage {
 		this.submitButtonElement.click();
 	}
 	
+	public void clickNavbarButtonElement() {
+		this.navbarButtonElement.click();
+	}
+	
 	public WebElement getNavbarInputElement() {
 		return this.navbarInputElement;
 	}

@@ -113,7 +113,6 @@ public class ERC721CollectionPage {
 		return erc721CollectionAddressTitleElement;
 	}
 
-
 	public WebElement getErc721CollectionQuantityTitleElement() {
 		return erc721CollectionQuantityTitleElement;
 	}
@@ -137,7 +136,6 @@ public class ERC721CollectionPage {
 	public WebElement getErc721CollectionTransferDataTitleElement() {
 		return erc721CollectionTransferDataTitleElement;
 	}
-
 
 	public WebElement getErc721CollectionTransferDataTableElement() {
 		return erc721CollectionTransferDataTableElement;
