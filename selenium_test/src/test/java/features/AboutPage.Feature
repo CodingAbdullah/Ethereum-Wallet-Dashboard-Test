@@ -1,4 +1,4 @@
-Feature: Testing Display and Content of About Page
+Feature: Testing display and content of About Page
 
 
 
