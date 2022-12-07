@@ -8,7 +8,7 @@ When  User selects Navbar to enter an incorrect wallet address <WalletAddress>
 Then  Display alert warning User
 Examples:
 	| WalletAddress 							  |	
-	| "abc"			  							  |
+	| "abc"                                       |
 	| "0x234r34t"   							  |
 	| "123456789"   							  |
 	| "walletAddr"  							  |
