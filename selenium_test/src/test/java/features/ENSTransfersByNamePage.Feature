@@ -17,7 +17,7 @@ Examples:
 	
 	
 Scenario Outline: User selects ENS Transfers By Name Page to enter a correct wallet address
-Given User lands on ENS To Address Page
+Given User lands on ENS Transfers By Name Page
 When  User selects Navbar to enter a correct wallet address <WalletAddress>
 Then  Redirect User to Transactions Page
 Examples:
@@ -44,7 +44,7 @@ Examples:
 	
 	
 
-Scenario Outline: User selects ENS Transfers By Name Page to enter incorrect ENS name to lookup
+Scenario Outline: User selects ENS Transfers By Name Page to enter an incorrect ENS name to lookup
 Given User lands on ENS Transfers By Name Page
 When  User enters an incorrect ENS name for address lookup <WalletAddress>
 Then  Display alert warning User, clear data if any

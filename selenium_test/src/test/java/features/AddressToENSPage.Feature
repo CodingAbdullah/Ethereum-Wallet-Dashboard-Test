@@ -44,7 +44,7 @@ Examples:
 	
 	
 
-Scenario Outline: User selects Address To ENS Page to enter incorrect wallet address lookup
+Scenario Outline: User selects Address To ENS Page to enter an incorrect wallet address lookup
 Given User lands on Address To ENS Page
 When  User enters an incorrect wallet address for ENS lookup <WalletAddress>
 Then  Display alert warning User, clear data if any
