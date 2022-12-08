@@ -1,4 +1,4 @@
-Feature: Testing Address To ENS Page content and display
+Feature: Testing Address To ENS Page for content and display
 
 
 
@@ -32,7 +32,7 @@ Examples:
 
 Scenario Outline: User selects Address To ENS Page to enter correct wallet address lookup
 Given User lands on Address To ENS Page
-When  User enters a correct wallet address for address lookup <WalletAddress>
+When  User enters a correct wallet address for ENS lookup <WalletAddress>
 Then  Display wallet information to User
 Examples:
 	| WalletAddress                                 |
@@ -46,7 +46,7 @@ Examples:
 
 Scenario Outline: User selects Address To ENS Page to enter incorrect wallet address lookup
 Given User lands on Address To ENS Page
-When  User enters an incorrect wallet address for address lookup <WalletAddress>
+When  User enters an incorrect wallet address for ENS lookup <WalletAddress>
 Then  Display alert warning User, clear data if any
 Examples:
 	| WalletAddress 							  |
