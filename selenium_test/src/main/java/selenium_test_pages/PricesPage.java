@@ -16,10 +16,17 @@ public class PricesPage {
 	@FindBy(xpath="//div[@class='App']//div[3]//main//h1")
 	private WebElement pricesPageTitleElement;
 	
+	@FindBy(xpath="//div[@class='App']//div[2]//nav//div[3]//table//tbody//tr")
+	private List<WebElement> sidebarSelectionElements;
+	
+	@FindBy(xpath="//div[@class='App']//div[4]//footer//div[@class='container']//p[1]//a")
+	private List<WebElement> footerLinkElements;
+	
+	@FindBy(xpath="//div[@class='App']//div[4]//footer//div[@class='container']//p[2]//p")
+	private WebElement footerCopyrightElement;
 	
 	@FindBy(xpath="//div[@class='App']//div[3]//main//p")
 	private WebElement pricesPageDescriptionElement;
-	
 	
 	@FindBy(xpath="//div[@class='App']//div[3]//main//div[@class='row']")
 	private List<WebElement> coinPricesCardsElement;
@@ -39,6 +46,18 @@ public class PricesPage {
 	
 	public void clickHideCoinPricesButtonElement() {
 		this.hideCoinPricesButtonElement.click();
+	}
+
+	public List<WebElement> getSidebarSelectionElements(){
+		return this.sidebarSelectionElements;
+	}
+	
+	public List<WebElement> getFooterLinkElements() {
+		return footerLinkElements;
+	}
+
+	public WebElement getFooterCopyrightElement() {
+		return footerCopyrightElement;
 	}
 
 	public WebElement getCoinPricesButtonElement() {
