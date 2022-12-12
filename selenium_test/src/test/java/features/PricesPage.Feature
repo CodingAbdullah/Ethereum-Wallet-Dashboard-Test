@@ -2,6 +2,13 @@ Feature: Testing display and content of ENSERC721Selection Page
 
 
 
+Scenario: User on the page, selects a sidebar link
+Given User lands on a particular page
+When  User selects a certain link
+Then  Redirect User to that page
+
+
+
 Scenario Outline: User selects Coin Prices page to enter an incorrect wallet address
 Given User lands on Coin Prices page
 When  User selects Navbar to enter an incorrect wallet address <WalletAddress>
@@ -49,3 +56,10 @@ Scenario: User selects the Hide Coin Prices button to hide coin prices
 Given User lands on Coin Prices Page
 When  User selects hide coin prices button
 Then  Hide coin prices to User and change button to show coin prices
+
+
+
+Scenario: User on the page, selects a footer link
+Given User lands on a particular page
+When  User selects a footer link
+Then  Redirect User to that link

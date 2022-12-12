@@ -2,6 +2,13 @@ Feature: Testing display and content of ENSERC721Selection Page
 
 
 
+Scenario: User on the page, selects a sidebar link
+Given User lands on a particular page
+When  User selects a certain link
+Then  Redirect User to that page
+
+
+
 Scenario Outline: User selects ENSERC721 Selection page to enter an incorrect wallet address
 Given User lands on ENSERC721 Selection page
 When  User selects Navbar to enter an incorrect wallet address <WalletAddress>
@@ -41,3 +48,10 @@ Scenario: User selects ENSERC721 Selection page to view ERC721 Lookups page
 Given User lands on ENSERC721 Selection page
 When  User selects the view ERC721 Lookups button
 Then  Redirect User to the ERC721 Lookups page
+
+
+
+Scenario: User on the page, selects a footer link
+Given User lands on a particular page
+When  User selects a footer link
+Then  Redirect User to that link

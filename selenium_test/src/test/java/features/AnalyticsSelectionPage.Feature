@@ -2,6 +2,13 @@ Feature: Testing display and content of Analytics Selection Page
 
 
 
+Scenario: User on the page, selects a sidebar link
+Given User lands on a particular page
+When  User selects a certain link
+Then  Redirect User to that page
+
+
+
 Scenario Outline: User selects Analytics Selection page to enter an incorrect wallet address
 Given User lands on Analytics Selection page
 When  User selects Navbar to enter an incorrect wallet address <WalletAddress>
@@ -41,3 +48,10 @@ Scenario: User selects Analytics Selection page to view Wallet Analytics page
 Given User lands on Analytics Selection page
 When  User selects the view Wallet Analytics button
 Then  Redirect User to the Wallet Analytics page
+
+
+
+Scenario: User on the page, selects a footer link
+Given User lands on a particular page
+When  User selects a footer link
+Then  Redirect User to that link

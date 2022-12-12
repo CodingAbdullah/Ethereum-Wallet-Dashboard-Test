@@ -2,6 +2,13 @@ Feature: Testing display and content of About Page
 
 
 
+Scenario: User on the page, selects a sidebar link
+Given User lands on a particular page
+When  User selects a certain link
+Then  Redirect User to that page
+
+
+
 Scenario Outline: User selects About Page to enter an incorrect wallet address
 Given User lands on About Page
 When  User selects Navbar to enter an incorrect wallet address <WalletAddress>
@@ -15,7 +22,7 @@ Examples:
 	| "0xcdbf58a9a9b54a2c43800c50c7192946de85832" | 
 	
 	
-	
+
 Scenario Outline: User selects About Page to enter a correct wallet address
 Given User lands on About Page
 When  User selects Navbar to enter a correct wallet address <WalletAddress>
@@ -41,3 +48,10 @@ Scenario: User selects About Page to read and go home
 Given User lands on About Page
 When  User selects the Go Home button
 Then  Redirect User to the Home Page
+
+
+
+Scenario: User on the page, selects a footer link
+Given User lands on a particular page
+When  User selects a footer link
+Then  Redirect User to that link

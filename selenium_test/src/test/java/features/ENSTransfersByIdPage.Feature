@@ -2,6 +2,13 @@ Feature: Testing ENS Transfers By ID Page for content and display
 
 
 
+Scenario: User on the page, selects a sidebar link
+Given User lands on a particular page
+When  User selects a certain link
+Then  Redirect User to that page
+
+
+
 Scenario Outline: User selects ENS Transfers By ID Page to enter an incorrect wallet address
 Given User lands on ENS Transfers By ID Page
 When  User selects Navbar to enter an incorrect wallet address <WalletAddress>
@@ -83,3 +90,10 @@ Examples:
 	| "123456789"   							    								   |
 	| "3456768987756543456789765432435467"  										   |
 	| "312345678456768987756543456789765432435467" 								       |
+	
+	
+	
+Scenario: User on the page, selects a footer link
+Given User lands on a particular page
+When  User selects a footer link
+Then  Redirect User to that link	

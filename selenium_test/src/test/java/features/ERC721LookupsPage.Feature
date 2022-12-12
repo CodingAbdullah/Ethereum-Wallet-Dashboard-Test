@@ -2,6 +2,13 @@ Feature: Testing ERC721 Lookups Page content and display
 
 
 
+Scenario: User on the page, selects a sidebar link
+Given User lands on a particular page
+When  User selects a certain link
+Then  Redirect User to that page
+
+
+
 Scenario Outline: User selects ERC721 Lookups Page to enter an incorrect wallet address
 Given User lands on ERC721 Lookups Page
 When  User selects Navbar to enter an incorrect wallet address <WalletAddress>
@@ -83,3 +90,10 @@ Examples:
 	| "0x49cf6f5d44e70224e2e23fdcdd2c053f30ada28b"                                     | 10252 |
 	| "0x1a92f7381b9f03921564a437210bb9396471050c"                                     | 5667  |
 	| "0x1a92f7381b9f039215647210bb9396471050c"                                        | 8998  |
+	
+	
+	
+Scenario: User on the page, selects a footer link
+Given User lands on a particular page
+When  User selects a footer link
+Then  Redirect User to that link

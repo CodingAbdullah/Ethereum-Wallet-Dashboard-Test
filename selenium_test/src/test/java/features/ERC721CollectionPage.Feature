@@ -2,6 +2,13 @@ Feature: Testing ERC721 Collection Page for content and display
 
 
 
+Scenario: User on the page, selects a sidebar link
+Given User lands on a particular page
+When  User selects a certain link
+Then  Redirect User to that page
+
+
+
 Scenario Outline: User selects ERC721 Collection Page to enter an incorrect wallet address
 Given User lands on ERC721 Collection Page
 When  User selects Navbar to enter an incorrect wallet address <WalletAddress>
@@ -83,3 +90,10 @@ Examples:
 	| "0x348fc118bcc65a92dc033a951af153d14d945312"                                     |
 	| "0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85"                                     |
 	| "0x1a92f7381b9f03921564a437210bb9396471050c"                                     |
+
+	
+
+Scenario: User on the page, selects a footer link
+Given User lands on a particular page
+When  User selects a footer link
+Then  Redirect User to that link	

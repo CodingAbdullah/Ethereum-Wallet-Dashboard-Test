@@ -89,6 +89,14 @@ public class ERC20TokenPricesPage {
 		return this.sidebarSelectionElements;
 	}
 	
+	public List<WebElement> getFooterLinkElements() {
+		return footerLinkElements;
+	}
+
+	public WebElement getFooterCopyrightElement() {
+		return footerCopyrightElement;
+	}
+
 	public WebElement getNavbarInputElement() {
 		return navbarInputElement;
 	}

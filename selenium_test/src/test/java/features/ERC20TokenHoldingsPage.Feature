@@ -2,6 +2,13 @@ Feature: Testing ERC20 Token Holdings Page for content and display
 
 
 
+Scenario: User on the page, selects a sidebar link
+Given User lands on a particular page
+When  User selects a certain link
+Then  Redirect User to that page
+
+
+
 Scenario Outline: User selects ERC20 Token Holdings Page to enter an incorrect wallet address
 Given User lands on ERC20 Token Holdings Page
 When  User selects Navbar to enter an incorrect wallet address <WalletAddress>
@@ -83,3 +90,10 @@ Examples:
 	| "0x9845e1909dca337944a0272f1f9f7249833d2d19"                                     |
 	| "0x0c23fc0ef06716d2f8ba19bc4bed56d045581f2d"                                     |
 	| "0xcdbf58a9a9b54a2c43800c50c7192946de858321"                                     |	
+	
+	
+	
+Scenario: User on the page, selects a footer link
+Given User lands on a particular page
+When  User selects a footer link
+Then  Redirect User to that link

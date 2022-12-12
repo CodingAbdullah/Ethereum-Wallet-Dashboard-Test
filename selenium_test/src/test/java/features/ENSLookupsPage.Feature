@@ -2,6 +2,13 @@ Feature: Testing ENS Lookups Page for content and display
 
 
 
+Scenario: User on the page, selects a sidebar link
+Given User lands on a particular page
+When  User selects a certain link
+Then  Redirect User to that page
+
+
+
 Scenario Outline: User selects ENS Lookups page to enter an incorrect wallet address
 Given User lands on ENS To Address Page
 When  User selects Navbar to enter an incorrect wallet address <WalletAddress>
@@ -55,3 +62,10 @@ Scenario: User selects ENS Lookups Page to view ENS Transfers By Id page
 Given User lands on ENS Lookups page
 When  User selects the view ENS Transfers By Id button
 Then  Redirect User to the ENS Transfers By Id page
+
+
+
+Scenario: User on the page, selects a footer link
+Given User lands on a particular page
+When  User selects a footer link
+Then  Redirect User to that link

@@ -2,6 +2,13 @@ Feature: Testing content and display for the Ethereum Wallet Dashboard home page
 
 
 
+Scenario: User on the page, selects a sidebar link
+Given User lands on a particular page
+When  User selects a certain link
+Then  Redirect User to that page
+
+
+
 Scenario Outline: User selects Home page to enter an incorrect wallet address
 Given User lands on Home page
 When  User selects Navbar to enter an incorrect wallet address <WalletAddress>
@@ -69,3 +76,10 @@ Scenario: User selects Home Page ETH price button to view ETH price chart
 Given User lands on Home page
 When  User selects ETH price button
 Then  Redirect User to ETH price chart
+
+
+
+Scenario: User on the page, selects a footer link
+Given User lands on a particular page
+When  User selects a footer link
+Then  Redirect User to that link
