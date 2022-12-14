@@ -64,7 +64,12 @@ public class ERC721HoldingsPage {
 	@FindBy(xpath="//div[@class='App']//div[3]//div//main[3]//div//table")
 	private WebElement erc721HoldingsTransfersTableElement;
 	
+	private WebDriver driver;
 	
+	public WebDriver getDriver() {
+		return driver;
+	}
+
 	public void setNavbarInputElement(String keys) {
 		this.navbarInputElement.sendKeys(keys);
 	}
@@ -74,6 +79,7 @@ public class ERC721HoldingsPage {
 	}
 	
 	public ERC721HoldingsPage(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	

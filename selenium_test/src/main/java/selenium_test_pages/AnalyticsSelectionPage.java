@@ -40,8 +40,15 @@ public class AnalyticsSelectionPage {
 	@FindBy(xpath="//div[@class='App']//div[3]//div//main//div[2]//div[@class='container']//div//button[2]")
 	private WebElement walletAnalyticsButtonElement;
 	
+	private WebDriver driver;
+	
+	public WebDriver getDriver() {
+		return driver;
+	}
+
 	// Page Object Model in action for ENS Lookups page
 	public AnalyticsSelectionPage(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	

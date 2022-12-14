@@ -37,9 +37,15 @@ public class ENSTransfersByIdPage {
 	@FindBy(xpath="//main//div[@class='jumbotron']//div[@class='container']//button[2]")
 	private WebElement clearButtonElement;
 	
+	private WebDriver driver;
 	
+	public WebDriver getDriver() {
+		return driver;
+	}
+
 	// Page Object Model in action for ENSTransfersById page
 	public ENSTransfersByIdPage(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	

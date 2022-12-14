@@ -36,9 +36,15 @@ public class EthDashboardHomePage {
 	@FindBy(xpath="//div[@class='App']//div[3]//main//div[4]//div[@class='row']//button[2]")
 	private WebElement ethChartButtonElement;
 	
+	private WebDriver driver;
 	
+	public WebDriver getDriver() {
+		return driver;
+	}
+
 	// Page Object Model in action for home page
 	public EthDashboardHomePage(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	

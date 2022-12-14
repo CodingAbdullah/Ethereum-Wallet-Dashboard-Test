@@ -31,12 +31,17 @@ public class PricesPage {
 	@FindBy(xpath="//div[@class='App']//div[3]//main//div[@class='row']")
 	private List<WebElement> coinPricesCardsElement;
 	
-	
 	@FindBy(xpath="//div[@class='App']//div[3]//main//button")
 	private WebElement hideCoinPricesButtonElement;
 	
+	private WebDriver driver;
 	
+	public WebDriver getDriver() {
+		return driver;
+	}
+
 	public PricesPage(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	

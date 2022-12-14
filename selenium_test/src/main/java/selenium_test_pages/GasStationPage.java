@@ -46,9 +46,15 @@ public class GasStationPage {
 		@FindBy(xpath="//div[@class='App']//div[3]//div//main//div[6]//div")
 		private List<WebElement> baseFeesListElement;
 		
+		private WebDriver driver;
 		
+		public WebDriver getDriver() {
+			return driver;
+		}
+
 		// Page Object Model in action for Gas Station Page
 		public GasStationPage(WebDriver driver) {
+			this.driver = driver;
 			PageFactory.initElements(driver, this);
 		}
 		

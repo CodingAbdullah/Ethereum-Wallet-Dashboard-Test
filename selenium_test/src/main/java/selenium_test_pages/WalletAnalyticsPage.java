@@ -73,7 +73,14 @@ public class WalletAnalyticsPage {
 	@FindBy(xpath="//div[@class='App']//div[3]//div//main[4]//div//div[2]//div//table")
 	private WebElement walletERC721HoldingsTableElement;
 	
+	private WebDriver driver;
+	
+	public WebDriver getDriver() {
+		return driver;
+	}
+
 	public WalletAnalyticsPage(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	

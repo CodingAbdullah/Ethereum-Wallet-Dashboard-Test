@@ -64,7 +64,14 @@ public class ERC20TokenHoldingsPage {
 	@FindBy(xpath="//div[@class='App']//div[3]//div//div//table")
 	private WebElement erc20HoldingsTransferTableElement;
 	
+	private WebDriver driver;
+	
+	public WebDriver getDriver() {
+		return driver;
+	}
+
 	public ERC20TokenHoldingsPage(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	

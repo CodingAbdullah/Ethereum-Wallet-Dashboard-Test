@@ -76,9 +76,15 @@ public class ERC721CollectionPage {
 	@FindBy(xpath="//div[@class='App']//div[3]//div//div[4]//table")
 	private WebElement erc721CollectionRecentSalesTableElement;
 	
+	private WebDriver driver;
 	
+	public WebDriver getDriver() {
+		return driver;
+	}
+
 	// Page Object Model in action for ERC721Collection Page
 	public ERC721CollectionPage(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	

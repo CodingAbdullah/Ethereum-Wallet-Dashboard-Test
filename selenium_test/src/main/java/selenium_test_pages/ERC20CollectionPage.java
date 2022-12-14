@@ -58,9 +58,15 @@ public class ERC20CollectionPage {
 	@FindBy(xpath="//div[@class='App']//div[3]//div//main[3]//div//div//table")
 	private WebElement erc20TransfersTableElement;
 	
+	private WebDriver driver;
 	
+	public WebDriver getDriver() {
+		return driver;
+	}
+
 	// Page Object Model in action for ERC20Collection page
 	public ERC20CollectionPage(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	

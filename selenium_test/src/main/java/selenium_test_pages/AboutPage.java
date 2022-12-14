@@ -51,12 +51,18 @@ public class AboutPage {
 	@FindBy(xpath="//div[@class='about']//main//div[8]//p")
 	private WebElement developerDescriptionElement;
 	
+	private WebDriver driver;
 
 	// Page Object Model in action for about page
 	public AboutPage(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	
+	public WebDriver getDriver() {
+		return driver;
+	}
+
 	public void setNavbarInputElement(String keys) {
 		this.navbarInputElement.sendKeys(keys);
 	}

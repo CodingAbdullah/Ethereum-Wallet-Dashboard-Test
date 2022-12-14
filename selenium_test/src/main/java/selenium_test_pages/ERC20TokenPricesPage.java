@@ -55,9 +55,15 @@ public class ERC20TokenPricesPage {
 	@FindBy(xpath="//div[@class='App']//div[3]//div//main[1]//div[5]//div//table")
 	private WebElement erc20TokenAdditionalInformationTableElement;
 	
+	private WebDriver driver;
 	
+	public WebDriver getDriver() {
+		return driver;
+	}
+
 	// Page Object Model in action for ERC20 Token Prices Page
 	public ERC20TokenPricesPage(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	

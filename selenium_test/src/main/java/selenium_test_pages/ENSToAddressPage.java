@@ -37,9 +37,15 @@ public class ENSToAddressPage {
 	@FindBy(xpath="//main//div[@class='jumbotron']//div[@class='container']//button[2]")
 	private WebElement clearButtonElement;
 	
+	private WebDriver driver;
 	
+	public WebDriver getDriver() {
+		return driver;
+	}
+
 	// Page Object Model in action for ENSToAddress page
 	public ENSToAddressPage(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	

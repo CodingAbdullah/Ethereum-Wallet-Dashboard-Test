@@ -40,12 +40,18 @@ public class TokenAnalyticsPage {
 	@FindBy(xpath="//div[@class='App']//div[3]//div//main//div[2]//div[@class='container']//div//button[2]")
 	private WebElement erc721ButtonElement;
 	
+	private WebDriver driver;
 	
 	// Page Object Model in action for Token Analytics Page
 	public TokenAnalyticsPage(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	
+	public WebDriver getDriver() {
+		return driver;
+	}
+
 	public void setNavbarInputElement(String keys) {
 		this.navbarInputElement.sendKeys(keys);
 	}

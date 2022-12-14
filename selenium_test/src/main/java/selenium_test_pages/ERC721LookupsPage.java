@@ -76,7 +76,14 @@ public class ERC721LookupsPage {
 	@FindBy(xpath="//div[@class='App']]//div[3]//div//main[5]//div//div//table")
 	private WebElement erc721LookupsSalesTableElement;
 	
+	private WebDriver driver;
+	
+	public WebDriver getDriver() {
+		return driver;
+	}
+
 	public ERC721LookupsPage(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	

@@ -69,7 +69,14 @@ public class AddressToENSPage {
 	private WebElement nameResolveToAddressTableElement;
 	
 
+	private WebDriver driver;
+	
+	public WebDriver getDriver() {
+		return driver;
+	}
+
 	public AddressToENSPage(WebDriver driver) {
+		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	
