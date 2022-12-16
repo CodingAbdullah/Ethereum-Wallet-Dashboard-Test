@@ -1,4 +1,4 @@
-package selenium_test_pages;
+package pages;
 
 import java.util.List;
 
@@ -7,9 +7,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class TokenAnalyticsPage {
-	// Represent Token Analytics Page as a model using Page Factory architecture
 
+public class ENSERC721SelectionPage {
+	
+	
 	@FindBy(xpath="//nav//form//input")
 	private WebElement navbarInputElement;
 	
@@ -26,32 +27,31 @@ public class TokenAnalyticsPage {
 	private WebElement footerCopyrightElement;
 	
 	@FindBy(xpath="//div[@class='App']//div[3]//div//main//div[1]//h1")
-	private WebElement tokenAnalyticsTitleElement;
+	private WebElement ensERC721TitleElement;
 	
 	@FindBy(xpath="//div[@class='App']//div[3]//div//main//div[2]//div[@class='container']//div//label[1]")
-	private WebElement erc20TitleElement;
+	private WebElement ensLookupsTitleElement;
 	
 	@FindBy(xpath="//div[@class='App']//div[3]//div//main//div[2]//div[@class='container']//div//label[2]")
-	private WebElement erc721TitleElement;
+	private WebElement erc721LookupsTitleElement;
 	
 	@FindBy(xpath="//div[@class='App']//div[3]//div//main//div[2]//div[@class='container']//div//button[1]")
-	private WebElement erc20ButtonElement;
+	private WebElement ensLookupsButtonElement;
 	
 	@FindBy(xpath="//div[@class='App']//div[3]//div//main//div[2]//div[@class='container']//div//button[2]")
-	private WebElement erc721ButtonElement;
+	private WebElement erc721LookupsButtonElement;
 	
 	private WebDriver driver;
-	
-	// Page Object Model in action for Token Analytics Page
-	public TokenAnalyticsPage(WebDriver driver) {
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
-	}
 	
 	public WebDriver getDriver() {
 		return driver;
 	}
 
+	public ENSERC721SelectionPage(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+	
 	public void setNavbarInputElement(String keys) {
 		this.navbarInputElement.sendKeys(keys);
 	}
@@ -60,12 +60,12 @@ public class TokenAnalyticsPage {
 		this.navbarButtonElement.click();
 	}
 	
-	public void setERC20ButtonElement() {
-		this.erc20ButtonElement.click();
+	public void clickENSLookupsButtonElement() {
+		this.ensLookupsButtonElement.click();
 	}
 	
-	public void setERC721ButtonElement() {
-		this.erc721ButtonElement.click();
+	public void clickERC721LookupsButtonElement() {
+		this.erc721LookupsButtonElement.click();
 	}
 	
 	public List<WebElement> getSidebarSelectionElements(){
@@ -88,23 +88,23 @@ public class TokenAnalyticsPage {
 		return navbarButtonElement;
 	}
 
-	public WebElement getTokenAnalyticsTitleElement() {
-		return tokenAnalyticsTitleElement;
+	public WebElement getEnsERC721TitleElement() {
+		return ensERC721TitleElement;
 	}
 
-	public WebElement getErc20TitleElement() {
-		return erc20TitleElement;
+	public WebElement getEnsLookupsTitleElement() {
+		return ensLookupsTitleElement;
 	}
 
-	public WebElement getErc721TitleElement() {
-		return erc721TitleElement;
+	public WebElement getErc721LookupsTitleElement() {
+		return erc721LookupsTitleElement;
 	}
 
-	public WebElement getErc20ButtonElement() {
-		return erc20ButtonElement;
+	public WebElement getEnsLookupsButtonElement() {
+		return ensLookupsButtonElement;
 	}
 
-	public WebElement getErc721ButtonElement() {
-		return erc721ButtonElement;
+	public WebElement getErc721LookupsButtonElement() {
+		return erc721LookupsButtonElement;
 	}
 }

@@ -1,4 +1,4 @@
-package selenium_test_pages;
+package pages;
 
 import java.util.List;
 
@@ -7,9 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-
-public class ENSERC721SelectionPage {
-	
+public class AnalyticsSelectionPage {
+	// Represent ENS Lookups Page as a model using Page Factory architecture
 	
 	@FindBy(xpath="//nav//form//input")
 	private WebElement navbarInputElement;
@@ -27,19 +26,19 @@ public class ENSERC721SelectionPage {
 	private WebElement footerCopyrightElement;
 	
 	@FindBy(xpath="//div[@class='App']//div[3]//div//main//div[1]//h1")
-	private WebElement ensERC721TitleElement;
+	private WebElement analyticsTitleElement;
 	
 	@FindBy(xpath="//div[@class='App']//div[3]//div//main//div[2]//div[@class='container']//div//label[1]")
-	private WebElement ensLookupsTitleElement;
+	private WebElement tokenAnalyticsTitleElement;
 	
 	@FindBy(xpath="//div[@class='App']//div[3]//div//main//div[2]//div[@class='container']//div//label[2]")
-	private WebElement erc721LookupsTitleElement;
+	private WebElement walletAnalyticsTitleElement;
 	
 	@FindBy(xpath="//div[@class='App']//div[3]//div//main//div[2]//div[@class='container']//div//button[1]")
-	private WebElement ensLookupsButtonElement;
+	private WebElement tokenAnalyticsButtonElement;
 	
 	@FindBy(xpath="//div[@class='App']//div[3]//div//main//div[2]//div[@class='container']//div//button[2]")
-	private WebElement erc721LookupsButtonElement;
+	private WebElement walletAnalyticsButtonElement;
 	
 	private WebDriver driver;
 	
@@ -47,7 +46,8 @@ public class ENSERC721SelectionPage {
 		return driver;
 	}
 
-	public ENSERC721SelectionPage(WebDriver driver) {
+	// Page Object Model in action for ENS Lookups page
+	public AnalyticsSelectionPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -60,18 +60,18 @@ public class ENSERC721SelectionPage {
 		this.navbarButtonElement.click();
 	}
 	
-	public void clickENSLookupsButtonElement() {
-		this.ensLookupsButtonElement.click();
+	public void clickTokenAnalyticsButtonElement() {
+		this.tokenAnalyticsButtonElement.click();
 	}
 	
-	public void clickERC721LookupsButtonElement() {
-		this.erc721LookupsButtonElement.click();
+	public void clickWalletAnalyticsButtonElement() {
+		this.walletAnalyticsButtonElement.click();
 	}
-	
+
 	public List<WebElement> getSidebarSelectionElements(){
 		return this.sidebarSelectionElements;
 	}
-
+	
 	public List<WebElement> getFooterLinkElements() {
 		return footerLinkElements;
 	}
@@ -88,23 +88,23 @@ public class ENSERC721SelectionPage {
 		return navbarButtonElement;
 	}
 
-	public WebElement getEnsERC721TitleElement() {
-		return ensERC721TitleElement;
+	public WebElement getAnalyticsTitleElement() {
+		return analyticsTitleElement;
 	}
 
-	public WebElement getEnsLookupsTitleElement() {
-		return ensLookupsTitleElement;
+	public WebElement getTokenAnalyticsTitleElement() {
+		return tokenAnalyticsTitleElement;
 	}
 
-	public WebElement getErc721LookupsTitleElement() {
-		return erc721LookupsTitleElement;
+	public WebElement getWalletAnalyticsTitleElement() {
+		return walletAnalyticsTitleElement;
 	}
 
-	public WebElement getEnsLookupsButtonElement() {
-		return ensLookupsButtonElement;
+	public WebElement getTokenAnalyticsButtonElement() {
+		return tokenAnalyticsButtonElement;
 	}
 
-	public WebElement getErc721LookupsButtonElement() {
-		return erc721LookupsButtonElement;
+	public WebElement getWalletAnalyticsButtonElement() {
+		return walletAnalyticsButtonElement;
 	}
 }

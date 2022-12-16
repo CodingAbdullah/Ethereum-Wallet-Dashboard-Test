@@ -1,4 +1,4 @@
-package selenium_test_pages;
+package pages;
 
 import java.util.List;
 

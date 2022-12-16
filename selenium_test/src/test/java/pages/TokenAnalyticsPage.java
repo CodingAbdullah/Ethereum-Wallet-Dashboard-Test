@@ -1,4 +1,4 @@
-package selenium_test_pages;
+package pages;
 
 import java.util.List;
 
@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AnalyticsSelectionPage {
-	// Represent ENS Lookups Page as a model using Page Factory architecture
-	
+public class TokenAnalyticsPage {
+	// Represent Token Analytics Page as a model using Page Factory architecture
+
 	@FindBy(xpath="//nav//form//input")
 	private WebElement navbarInputElement;
 	
@@ -26,32 +26,32 @@ public class AnalyticsSelectionPage {
 	private WebElement footerCopyrightElement;
 	
 	@FindBy(xpath="//div[@class='App']//div[3]//div//main//div[1]//h1")
-	private WebElement analyticsTitleElement;
-	
-	@FindBy(xpath="//div[@class='App']//div[3]//div//main//div[2]//div[@class='container']//div//label[1]")
 	private WebElement tokenAnalyticsTitleElement;
 	
+	@FindBy(xpath="//div[@class='App']//div[3]//div//main//div[2]//div[@class='container']//div//label[1]")
+	private WebElement erc20TitleElement;
+	
 	@FindBy(xpath="//div[@class='App']//div[3]//div//main//div[2]//div[@class='container']//div//label[2]")
-	private WebElement walletAnalyticsTitleElement;
+	private WebElement erc721TitleElement;
 	
 	@FindBy(xpath="//div[@class='App']//div[3]//div//main//div[2]//div[@class='container']//div//button[1]")
-	private WebElement tokenAnalyticsButtonElement;
+	private WebElement erc20ButtonElement;
 	
 	@FindBy(xpath="//div[@class='App']//div[3]//div//main//div[2]//div[@class='container']//div//button[2]")
-	private WebElement walletAnalyticsButtonElement;
+	private WebElement erc721ButtonElement;
 	
 	private WebDriver driver;
+	
+	// Page Object Model in action for Token Analytics Page
+	public TokenAnalyticsPage(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
 	
 	public WebDriver getDriver() {
 		return driver;
 	}
 
-	// Page Object Model in action for ENS Lookups page
-	public AnalyticsSelectionPage(WebDriver driver) {
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
-	}
-	
 	public void setNavbarInputElement(String keys) {
 		this.navbarInputElement.sendKeys(keys);
 	}
@@ -60,18 +60,18 @@ public class AnalyticsSelectionPage {
 		this.navbarButtonElement.click();
 	}
 	
-	public void clickTokenAnalyticsButtonElement() {
-		this.tokenAnalyticsButtonElement.click();
+	public void setERC20ButtonElement() {
+		this.erc20ButtonElement.click();
 	}
 	
-	public void clickWalletAnalyticsButtonElement() {
-		this.walletAnalyticsButtonElement.click();
+	public void setERC721ButtonElement() {
+		this.erc721ButtonElement.click();
 	}
-
+	
 	public List<WebElement> getSidebarSelectionElements(){
 		return this.sidebarSelectionElements;
 	}
-	
+
 	public List<WebElement> getFooterLinkElements() {
 		return footerLinkElements;
 	}
@@ -88,23 +88,23 @@ public class AnalyticsSelectionPage {
 		return navbarButtonElement;
 	}
 
-	public WebElement getAnalyticsTitleElement() {
-		return analyticsTitleElement;
-	}
-
 	public WebElement getTokenAnalyticsTitleElement() {
 		return tokenAnalyticsTitleElement;
 	}
 
-	public WebElement getWalletAnalyticsTitleElement() {
-		return walletAnalyticsTitleElement;
+	public WebElement getErc20TitleElement() {
+		return erc20TitleElement;
 	}
 
-	public WebElement getTokenAnalyticsButtonElement() {
-		return tokenAnalyticsButtonElement;
+	public WebElement getErc721TitleElement() {
+		return erc721TitleElement;
 	}
 
-	public WebElement getWalletAnalyticsButtonElement() {
-		return walletAnalyticsButtonElement;
+	public WebElement getErc20ButtonElement() {
+		return erc20ButtonElement;
+	}
+
+	public WebElement getErc721ButtonElement() {
+		return erc721ButtonElement;
 	}
 }
