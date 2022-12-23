@@ -16,6 +16,11 @@ public class ENSERC721SelectionPageStepDefinition {
 	public void user_lands_on_a_particular_page() {
 		
 	}
+	
+	@Given("User lands on ENSERC721 Selection page")
+	public void User_lands_on_ENSERC721_Selection_page() {
+		
+	}
 
 	@When("User selects a certain link")
 	public void user_selects_a_certain_link() {

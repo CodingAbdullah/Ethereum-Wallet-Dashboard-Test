@@ -17,6 +17,11 @@ public class ENSLookupsPageStepDefinition {
 		
 	}
 
+	@Given("User lands on ENS To Address Page")
+	public void User_lands_on_ENS_To_Address_Page() {
+		
+	}
+	
 	@When("User selects a certain link")
 	public void user_selects_a_certain_link() {
 		

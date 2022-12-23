@@ -17,6 +17,11 @@ public class AddressToENSPageStepDefinition {
 	public void user_lands_on_a_particular_page() {
 		
 	}
+	
+	@Given("User lands on Address To ENS Page")
+	public void User_lands_on_Address_To_ENS_Page() {
+		
+	}
 
 	@When("User selects a certain link")
 	public void user_selects_a_certain_link() {
