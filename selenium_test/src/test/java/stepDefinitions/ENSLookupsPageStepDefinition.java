@@ -17,8 +17,8 @@ public class ENSLookupsPageStepDefinition {
 		
 	}
 
-	@Given("User lands on ENS To Address Page")
-	public void User_lands_on_ENS_To_Address_Page() {
+	@Given("User lands on ENS Lookups Page")
+	public void User_lands_on_ENS_Lookups_Page() {
 		
 	}
 	

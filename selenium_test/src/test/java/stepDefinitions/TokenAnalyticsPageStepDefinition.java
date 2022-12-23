@@ -17,6 +17,11 @@ public class TokenAnalyticsPageStepDefinition {
 		
 	}
 
+	@Given("User lands on Token Analytics page")
+	public void User_lands_on_Token_Analytics_page() {
+		
+	}
+	
 	@When("User selects a certain link")
 	public void user_selects_a_certain_link() {
 		

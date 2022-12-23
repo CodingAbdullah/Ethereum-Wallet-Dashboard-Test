@@ -16,6 +16,11 @@ public class ERC20TokenPricesPageStepDefinition {
 	public void user_lands_on_a_particular_page() {
 		
 	}
+	
+	@Given("User lands on ERC20 Token Prices Page")
+	public void User_lands_on_ERC20_Token_Prices_Page() {
+		
+	}
 
 	@When("User selects a certain link")
 	public void user_selects_a_certain_link() {

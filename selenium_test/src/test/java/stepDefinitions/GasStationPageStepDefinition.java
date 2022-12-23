@@ -18,6 +18,11 @@ public class GasStationPageStepDefinition {
 		
 	}
 
+	@Given("User lands on Gas Prices page")
+	public void User_lands_on_Gas_Prices_page() {
+		
+	}
+	
 	@When("User selects a certain link")
 	public void user_selects_a_certain_link() {
 		

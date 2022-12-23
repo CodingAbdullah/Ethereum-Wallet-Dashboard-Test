@@ -16,6 +16,11 @@ public class PricesPageStepDefinition {
 	public void user_lands_on_a_particular_page() {
 		
 	}
+	
+	@Given("User lands on Coin Prices page")
+	public void User_lands_on_Coin_Prices_page() {
+		
+	}
 
 	@When("User selects a certain link")
 	public void user_selects_a_certain_link() {

@@ -10,7 +10,7 @@ Then  Redirect User to that page
 
 
 Scenario Outline: User selects ENS Lookups page to enter an incorrect wallet address
-Given User lands on ENS To Address Page
+Given User lands on ENS Lookups Page
 When  User selects Navbar to enter an incorrect wallet address <WalletAddress>
 Then  Display alert warning User
 Examples:

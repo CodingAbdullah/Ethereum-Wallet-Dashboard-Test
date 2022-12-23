@@ -16,6 +16,11 @@ public class ERC721CollectionPageStepDefinition {
 	public void user_lands_on_a_particular_page() {
 		
 	}
+	
+	@Given("User lands on ERC721 Collection Page")
+	public void User_lands_on_ERC721_Collection_Page() {
+		
+	}
 
 	@When("User selects a certain link")
 	public void user_selects_a_certain_link() {

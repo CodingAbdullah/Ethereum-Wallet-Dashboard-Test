@@ -17,6 +17,11 @@ public class WalletAnalyticsPageStepDefinition {
 		
 	}
 
+	@Given("User lands on Wallet Analytics Page")
+	public void User_lands_on_Wallet_Analytics_Page() {
+		
+	}
+	
 	@When("User selects a certain link")
 	public void user_selects_a_certain_link() {
 		

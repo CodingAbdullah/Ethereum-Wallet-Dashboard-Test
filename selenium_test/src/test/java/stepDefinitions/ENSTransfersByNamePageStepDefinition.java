@@ -16,6 +16,11 @@ public class ENSTransfersByNamePageStepDefinition {
 	public void user_lands_on_a_particular_page() {
 		
 	}
+	
+	@Given("User lands on ENS Transfers By Name Page")
+	public void User_lands_on_ENS_Transfers_By_Name_Page() {
+		
+	}
 
 	@When("User selects a certain link")
 	public void user_selects_a_certain_link() {
