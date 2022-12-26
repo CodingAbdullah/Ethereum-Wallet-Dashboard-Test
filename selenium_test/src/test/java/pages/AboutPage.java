@@ -15,7 +15,10 @@ public class AboutPage {
 	@FindBy(xpath="//nav//form//button")
 	private WebElement navbarButtonElement;
 	
-	@FindBy(xpath="//div[@class='App']//div[2]//nav//div[3]//table//tbody//tr")
+	@FindBy(xpath="//nav//div[@class='alert']//div[1]")
+	private WebElement navbarAlertElement;
+	
+	@FindBy(xpath="//div[@class='App']//div[2]//nav//div[3]//table//tbody//a")
 	private List<WebElement> sidebarSelectionElements;
 	
 	@FindBy(xpath="//div[@class='App']//div[4]//footer//div[@class='container']//p[1]//a")
@@ -50,6 +53,9 @@ public class AboutPage {
 	
 	@FindBy(xpath="//div[@class='about']//main//div[8]//p")
 	private WebElement developerDescriptionElement;
+	
+	@FindBy(xpath="//div[@class='about']//main//div[8]//p//a")
+	private WebElement developerLinkElement;
 	
 	private WebDriver driver;
 
@@ -129,5 +135,13 @@ public class AboutPage {
 
 	public WebElement getDeveloperDescriptionElement() {
 		return developerDescriptionElement;
+	}
+	
+	public WebElement getDeveloperLinkElement() {
+		return developerLinkElement;
+	}
+	
+	public WebElement getNavbarAlertElement() {
+		return this.navbarAlertElement;
 	}
 }
