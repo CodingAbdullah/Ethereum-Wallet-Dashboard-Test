@@ -87,7 +87,6 @@ public class AboutPageStepDefinition {
 	
 	@When("User selects a footer link")
 	public void user_selects_a_footer_link() {
-		
 		// Randomize selection on each test run
 		int randomNumber = (int) ((Math.random())*AboutPageInstance.getFooterLinkElements().size() - 1); 
 		AboutPageInstance.getFooterLinkElements().get(randomNumber).click();
@@ -95,7 +94,6 @@ public class AboutPageStepDefinition {
 	
 	@When("User selects a certain link")
 	public void user_selects_a_certain_link() {
-		
 		// Randomize selection on each test run
 		int randomNumber = (int) ((Math.random())*AboutPageInstance.getSidebarSelectionElements().size() - 1);
 		AboutPageInstance.getSidebarSelectionElements().get(randomNumber).click();
@@ -149,7 +147,6 @@ public class AboutPageStepDefinition {
 		}
 		
 		Assert.assertEquals(footerFlag, true);
-		
 	}
 	
 	@Then("Redirect User to that page")
