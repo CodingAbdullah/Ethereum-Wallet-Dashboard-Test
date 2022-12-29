@@ -17,6 +17,9 @@ public class ENSERC721SelectionPage {
 	@FindBy(xpath="//nav//form//button")
 	private WebElement navbarButtonElement;
 	
+	@FindBy(xpath="//nav//div[@class='alert']//div[1]")
+	private WebElement navbarAlertElement;
+	
 	@FindBy(xpath="//div[@class='App']//div[2]//nav//div[3]//table//tbody//tr")
 	private List<WebElement> sidebarSelectionElements;
 	
@@ -106,5 +109,9 @@ public class ENSERC721SelectionPage {
 
 	public WebElement getErc721LookupsButtonElement() {
 		return erc721LookupsButtonElement;
+	}
+	
+	public WebElement getNavbarAlertElement() {
+		return navbarAlertElement;
 	}
 }

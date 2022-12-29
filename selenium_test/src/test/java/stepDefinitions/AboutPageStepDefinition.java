@@ -135,7 +135,11 @@ public class AboutPageStepDefinition {
 				"https://etherscan.io/", "https://moralis.io/", "https://www.transpose.io/"
 		};
 		
+		List<String> windowList = new ArrayList<String>(this.driver.getWindowHandles());
+		
+		this.driver.switchTo().window(windowList.get(1)); // Second window opened will contain the name of the link
 		String URL = this.driver.getCurrentUrl();
+		
 		for (int i = 0; i < footerLnks.length; i++) {
 			if (URL == footerLnks[i]) {
 				footerFlag = true;
