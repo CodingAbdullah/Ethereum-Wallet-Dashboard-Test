@@ -76,7 +76,7 @@ public class ENSERC721SelectionPageStepDefinition {
 		ENSERC721SelectionPageInstance.clickENSLookupsButtonElement();
 	}
 	
-	@When("When User selects the view ERC721 Lookups button")
+	@When("User selects the view ERC721 Lookups button")
 	public void When_User_selects_the_view_ERC721_Lookups_button() {
 		ENSERC721SelectionPageInstance.clickERC721LookupsButtonElement();
 	}
