@@ -11,7 +11,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pages.ENSERC721SelectionPage;
 import pages.TokenAnalyticsPage;
 
 public class TokenAnalyticsPageStepDefinition {
