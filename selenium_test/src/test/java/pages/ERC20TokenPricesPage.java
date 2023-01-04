@@ -16,6 +16,12 @@ public class ERC20TokenPricesPage {
 	@FindBy(xpath="//nav//form//button")
 	private WebElement navbarButtonElement;
 	
+	@FindBy(xpath="//div[@class='App']//div[3]//div//main//div[2]//div//div")
+	private WebElement addressAlertElement;
+	
+	@FindBy(xpath="//nav//div[@class='alert']//div[1]")
+	private WebElement navbarAlertElement;
+	
 	@FindBy(xpath="//div[@class='App']//div[2]//nav//div[3]//table//tbody//tr")
 	private List<WebElement> sidebarSelectionElements;
 	
@@ -149,5 +155,13 @@ public class ERC20TokenPricesPage {
 
 	public WebElement getErc20TokenAdditionalInformationTableElement() {
 		return erc20TokenAdditionalInformationTableElement;
+	}
+	
+	public WebElement getNavbarAlertElement() {
+		return navbarAlertElement;
+	}
+	
+	public WebElement getAddressAlertElement() {
+		return addressAlertElement;
 	}
 }
