@@ -40,7 +40,7 @@ Examples:
 Scenario Outline: User selects Home page to enter an incorrect wallet address for home page transaction lookup
 Given User lands on Home page
 When  User selects home page input to enter an incorrect wallet address <WalletAddress>
-Then  Display alert warning User
+Then  Display dashboard alert warning User
 Examples:
 	| WalletAddress 							  |	
 	| "abc"                                       |

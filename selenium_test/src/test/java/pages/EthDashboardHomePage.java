@@ -14,8 +14,17 @@ public class EthDashboardHomePage {
 	
 	@FindBy(xpath="//nav//form//button")
 	private WebElement navbarButtonElement;
+	
+	@FindBy(xpath="//nav//div[@class='alert']//div[1]")
+	private WebElement navbarAlertElement;
+	
+	@FindBy(xpath="//div[@class='App']//div[3]//main//div[1]//h1")
+	private WebElement dashboardTitleElement;
+	
+	@FindBy(xpath="//div[@class='App']//div[3]//main//div[2]//div[@class='alert']")
+	private WebElement dashboardInputAlertElement;
 
-	@FindBy(xpath="//div[@class='App']//div[2]//nav//div[3]//table//tbody//tr")
+	@FindBy(xpath="//div[@class='App']//div[2]//nav//div[3]//table//tbody//a")
 	private List<WebElement> sidebarSelectionElements;
 	
 	@FindBy(xpath="//div[@class='App']//div[4]//footer//div[@class='container']//p[1]//a")
@@ -106,5 +115,17 @@ public class EthDashboardHomePage {
 
 	public WebElement getEthChartButtonElement() {
 		return ethChartButtonElement;
+	}
+	
+	public WebElement getNavbarAlertElement() {
+		return navbarAlertElement;
+	}
+	
+	public WebElement getDashboardTitleElement() {
+		return dashboardTitleElement;
+	}
+	
+	public WebElement getDashboardInputAlertElement() {
+		return dashboardInputAlertElement;
 	}
 }
