@@ -16,6 +16,9 @@ public class ENSToAddressPage {
 	@FindBy(xpath="//nav//form//button")
 	private WebElement navbarButtonElement;
 	
+	@FindBy(xpath="//div[@class='App']//div[3]//main//div[1]//h1")
+	private WebElement ENSToAddressTitleElement;
+	
 	@FindBy(xpath="//div[@class='App']//div[2]//nav//div[3]//table//tbody//tr")
 	private List<WebElement> sidebarSelectionElements;
 	
@@ -37,6 +40,18 @@ public class ENSToAddressPage {
 	@FindBy(xpath="//main//div[@class='jumbotron']//div[@class='container']//button[2]")
 	private WebElement clearButtonElement;
 	
+	@FindBy(xpath="//div[@class='App']//div[3]//main//div[3]//div[1]//h3")
+	private WebElement ResolverTitleElement;
+	
+	@FindBy(xpath="//div[@class='App']//div[3]//main//div[4]//div[1]//h3")
+	private WebElement AdditionalInfoTitleElement;
+	
+	@FindBy(xpath="//div[@class='App']//div[3]//main//div[5]//div[1]//h3")
+	private WebElement OwnerTitleElement;
+	
+	@FindBy(xpath="//div[@class='App']//div[3]//main//div[6]//div[1]//h3")
+	private WebElement AddressResolverTitleElement;
+		
 	private WebDriver driver;
 	
 	public WebDriver getDriver() {
@@ -85,6 +100,26 @@ public class ENSToAddressPage {
 		return footerCopyrightElement;
 	}
 
+	public WebElement getENSToAddressTitleElement() {
+		return ENSToAddressTitleElement;
+	}
+
+	public WebElement getResolverTitleElement() {
+		return ResolverTitleElement;
+	}
+
+	public WebElement getAdditionalInfoTitleElement() {
+		return AdditionalInfoTitleElement;
+	}
+
+	public WebElement getOwnerTitleElement() {
+		return OwnerTitleElement;
+	}
+
+	public WebElement getAddressResolverTitleElement() {
+		return AddressResolverTitleElement;
+	}
+
 	public WebElement getNavbarInputElement() {
 		return navbarInputElement;
 	}
@@ -108,5 +143,4 @@ public class ENSToAddressPage {
 	public WebElement getClearButtonElement() {
 		return clearButtonElement;
 	}
-	
 }
