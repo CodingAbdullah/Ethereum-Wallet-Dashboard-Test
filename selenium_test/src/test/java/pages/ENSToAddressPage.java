@@ -16,6 +16,9 @@ public class ENSToAddressPage {
 	@FindBy(xpath="//nav//form//button")
 	private WebElement navbarButtonElement;
 	
+	@FindBy(xpath="//nav//div[@class='alert']//div[1]")
+	private WebElement navbarAlertElement;
+	
 	@FindBy(xpath="//div[@class='App']//div[3]//main//div[1]//h1")
 	private WebElement ENSToAddressTitleElement;
 	
@@ -142,5 +145,9 @@ public class ENSToAddressPage {
 
 	public WebElement getClearButtonElement() {
 		return clearButtonElement;
+	}
+	
+	public WebElement getNavbarAlertElement() {
+		return navbarAlertElement;
 	}
 }

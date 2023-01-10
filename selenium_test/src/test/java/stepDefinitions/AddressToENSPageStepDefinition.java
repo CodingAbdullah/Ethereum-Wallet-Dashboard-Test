@@ -192,7 +192,7 @@ public class AddressToENSPageStepDefinition {
 	@Then("Data or alerts clear on page")
 	public void Data_or_alerts_clear_on_page() {
 		String URL = this.driver.getCurrentUrl();
-		Assert.assertEquals("https://www.ethwdashboard.xyz", URL);
+		Assert.assertEquals("https://www.ethwdashboard.xyz/ens-lookup/address-to-ens-lookup", URL);
 	}
 	
 	@Then("Redirect User to Home Page")

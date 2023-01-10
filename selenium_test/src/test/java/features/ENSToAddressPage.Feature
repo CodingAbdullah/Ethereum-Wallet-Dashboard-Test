@@ -54,7 +54,7 @@ Examples:
 Scenario Outline: User selects ENS To Address Page to enter an incorrect ENS name to lookup
 Given User lands on ENS To Address Page
 When  User enters an incorrect ENS name for address lookup <WalletAddress>
-Then  Display alert warning User, clear data if any
+Then  Display alert warning User clear data if any
 Examples:
 	| WalletAddress 							    |
 	| "abc.e"			  						    |	
