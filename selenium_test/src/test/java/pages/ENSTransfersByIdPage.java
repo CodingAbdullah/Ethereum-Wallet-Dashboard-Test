@@ -19,6 +19,9 @@ public class ENSTransfersByIdPage {
 	@FindBy(xpath="//nav//div[@class='alert']//div[1]")
 	private WebElement navbarAlertElement;
 	
+	@FindBy(xpath="//div[@class='App']//div[3]//main//div[1]//h1")
+	private WebElement ENSTransfersByIdTitleElement;
+	
 	@FindBy(xpath="//div[@class='App']//div[2]//nav//div[3]//table//tbody//a")
 	private List<WebElement> sidebarSelectionElements;
 	
@@ -39,6 +42,9 @@ public class ENSTransfersByIdPage {
 	
 	@FindBy(xpath="//main//div[@class='jumbotron']//div[@class='container']//button[2]")
 	private WebElement clearButtonElement;
+	
+	@FindBy(xpath="//div[@class='App']//div[3]//main//div[3]//div[1]//h3")
+	private WebElement TransfersTitleElement;
 	
 	private WebDriver driver;
 	
@@ -112,4 +118,15 @@ public class ENSTransfersByIdPage {
 		return clearButtonElement;
 	}
 	
+	public WebElement getNavbarAlertElement() {
+		return navbarAlertElement;
+	}
+	
+	public WebElement getENSTransfersByIdTitleElement() {
+		return ENSTransfersByIdTitleElement;
+	}
+	
+	public WebElement getTransfersTitleElement() {
+		return TransfersTitleElement;
+	}	
 }

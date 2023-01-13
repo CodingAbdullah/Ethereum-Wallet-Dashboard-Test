@@ -54,7 +54,7 @@ Examples:
 Scenario Outline: User selects ENS Transfers By ID Page to enter an incorrect ENS ID to lookup
 Given User lands on ENS Transfers By ID Page
 When  User enters an incorrect ENS ID for address lookup <WalletAddress>
-Then  Display alert warning User, clear data if any
+Then  Display alert warning User clear data if any
 Examples:
 	| WalletAddress 							    |
 	| "234567893432"			  				    |	
