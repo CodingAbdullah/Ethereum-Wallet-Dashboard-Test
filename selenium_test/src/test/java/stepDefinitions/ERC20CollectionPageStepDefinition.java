@@ -179,6 +179,7 @@ public class ERC20CollectionPageStepDefinition {
 		
 		Assert.assertEquals("https://www.ethwdashboard.xyz/collections/erc720-collection", URL);
 		Assert.assertEquals(ERC20Title, "ERC20 Token Analytics");
+		Assert.assertEquals(PriceTitle.split(" ")[0], "Price:");
 		Assert.assertEquals(ERC20StatisticsTitle, "ERC20 Token Analytics");
 		Assert.assertEquals(ERC20TransfersTitle, "ERC20 Transfers (Recent or Top 100)");
 	}
