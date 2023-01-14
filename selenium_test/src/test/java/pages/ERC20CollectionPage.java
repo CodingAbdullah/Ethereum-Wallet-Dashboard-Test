@@ -16,7 +16,10 @@ public class ERC20CollectionPage {
 	@FindBy(xpath="//nav//form//button")
 	private WebElement navbarButtonElement;
 	
-	@FindBy(xpath="//div[@class='App']//div[2]//nav//div[3]//table//tbody//tr")
+	@FindBy(xpath="//nav//div[@class='alert']//div[1]")
+	private WebElement navbarAlertElement;
+	
+	@FindBy(xpath="//div[@class='App']//div[2]//nav//div[3]//table//tbody//a")
 	private List<WebElement> sidebarSelectionElements;
 
 	@FindBy(xpath="//div[@class='App']//div[4]//footer//div[@class='container']//p[1]//a")
@@ -49,14 +52,20 @@ public class ERC20CollectionPage {
 	@FindBy(xpath="//div[@class='App']//div[3]//div//main[2]//div//main//div//h3")
 	private WebElement erc20StatisticsTitleElement;
 	
-	@FindBy(xpath="//div[@class='App']//div[3]//div//main[2]//div//div//table")
-	private WebElement erc20StatisticsTableElement;
-	
-	@FindBy(xpath="//div[@class='App']//div[3]//div//main[3]//div//main//div//h3")
-	private WebElement erc20TransfersTitleElement;
-	
 	@FindBy(xpath="//div[@class='App']//div[3]//div//main[3]//div//div//table")
 	private WebElement erc20TransfersTableElement;
+	
+	@FindBy(xpath="//div[@class='App']//div[3]//main[1]//div//h1")
+	private WebElement ERC20TitleElement;
+	
+	@FindBy(xpath="//div[@class='App']//div[3]//div//main[2]//h3")
+	private WebElement PriceTitleElement;
+	
+	@FindBy(xpath="//div[@class='App']//div[3]//div//main[2]//div[1]//main//div//h3")
+	private WebElement ERC20StatisticsTitleElement;
+	
+	@FindBy(xpath="//div[@class='App']//div[3]//div//main[3]//div[1]//main//div//h3")
+	private WebElement ERC20TransfersTitleElement;
 	
 	private WebDriver driver;
 	
@@ -146,15 +155,27 @@ public class ERC20CollectionPage {
 		return erc20StatisticsTitleElement;
 	}
 
-	public WebElement getErc20StatisticsTableElement() {
-		return erc20StatisticsTableElement;
-	}
-
-	public WebElement getErc20TransfersTitleElement() {
-		return erc20TransfersTitleElement;
-	}
-
 	public WebElement getErc20TransfersTableElement() {
 		return erc20TransfersTableElement;
+	}
+
+	public WebElement getNavbarAlertElement() {
+		return navbarAlertElement;
+	}
+
+	public WebElement getPriceTitleElement() {
+		return PriceTitleElement;
+	}
+
+	public WebElement getERC20StatisticsTitleElement() {
+		return ERC20StatisticsTitleElement;
+	}
+
+	public WebElement getERC20TransfersTitleElement() {
+		return ERC20TransfersTitleElement;
+	}
+	
+	public WebElement getERC20TitleElement() {
+		return ERC20TitleElement;
 	}
 }
