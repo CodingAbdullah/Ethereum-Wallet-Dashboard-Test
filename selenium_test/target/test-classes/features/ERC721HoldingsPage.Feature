@@ -54,7 +54,7 @@ Examples:
 Scenario Outline: User selects ERC721 Token Holdings Page to enter an incorrect wallet address for ERC721 holdings
 Given User lands on ERC721 Token Holdings Page
 When  User enters an incorrect wallet address for ERC721 holdings <WalletAddress>
-Then  Display alert warning User, clear data if any
+Then  Display alert warning User clear data if any
 Examples:
 	| WalletAddress                                 |
 	| "234567893432"                                |	

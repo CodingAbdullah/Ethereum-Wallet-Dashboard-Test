@@ -188,7 +188,7 @@ public class ERC20TokenHoldingsPageStepDefinition {
 		
 		String URL = this.driver.getCurrentUrl();
 		
-		Assert.assertEquals(URL, "https://www.ethwdashboard.xyz/erc20-holdings", URL);
+		Assert.assertEquals(URL, "https://www.ethwdashboard.xyz/erc20-holdings");
 		Assert.assertEquals("ERC20 Holdings", ERC20HoldingsTitle);
 		Assert.assertEquals("ERC20 Recent Transfers", ERC20RecentTransfersTitle);
 	}
