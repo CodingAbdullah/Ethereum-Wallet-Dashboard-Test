@@ -16,6 +16,9 @@ public class ERC20TokenHoldingsPage {
 	@FindBy(xpath="//nav//form//button")
 	private WebElement navbarButtonElement;
 	
+	@FindBy(xpath="//nav//div[@class='alert']//div[1]")
+	private WebElement navbarAlertElement;
+	
 	@FindBy(xpath="//div[@class='App']//div[2]//nav//div[3]//table//tbody//a")
 	private List<WebElement> sidebarSelectionElements;
 	
@@ -169,5 +172,9 @@ public class ERC20TokenHoldingsPage {
 
 	public WebElement getErc20HoldingsTransferTableElement() {
 		return erc20HoldingsTransferTableElement;
+	}
+	
+	public WebElement getNavbarAlertElement() {
+		return navbarAlertElement;
 	}
 }
