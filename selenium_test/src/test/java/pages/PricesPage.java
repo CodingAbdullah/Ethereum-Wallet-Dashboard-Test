@@ -10,6 +10,15 @@ import org.openqa.selenium.support.PageFactory;
 public class PricesPage {
 	// Represent Prices Page as a model using Page Factory architecture
 	
+	@FindBy(xpath="//nav//form//input")
+	private WebElement navbarInputElement;
+
+	@FindBy(xpath="//nav//form//button")
+	private WebElement navbarButtonElement;
+	
+	@FindBy(xpath="//nav//div[@class='alert']//div[1]")
+	private WebElement navbarAlertElement;
+	
 	@FindBy(xpath="//div[@class='App']//div[3]//button")
 	private WebElement coinPricesButtonElement;
 	
@@ -28,7 +37,7 @@ public class PricesPage {
 	@FindBy(xpath="//div[@class='App']//div[3]//main//p")
 	private WebElement pricesPageDescriptionElement;
 	
-	@FindBy(xpath="//div[@class='App']//div[3]//main//div[@class='row']")
+	@FindBy(xpath="//div[@class='App']//div[3]//main//div[@class='row']//button")
 	private List<WebElement> coinPricesCardsElement;
 	
 	@FindBy(xpath="//div[@class='App']//div[3]//main//button")
@@ -45,6 +54,10 @@ public class PricesPage {
 		PageFactory.initElements(driver, this);
 	}
 	
+	public void setNavbarInputElement(String address) {
+		this.navbarInputElement.sendKeys(address);
+	}
+
 	public void clickCoinPricesButtonElement() {
 		this.coinPricesButtonElement.click();
 	}
@@ -84,5 +97,16 @@ public class PricesPage {
 	public WebElement getHideCoinPricesButtonElement() {
 		return hideCoinPricesButtonElement;
 	}
-	
+
+	public WebElement getNavbarInputElement() {
+		return navbarInputElement;
+	}
+
+	public WebElement getNavbarButtonElement() {
+		return navbarButtonElement;
+	}
+
+	public WebElement getNavbarAlertElement() {
+		return navbarAlertElement;
+	}
 }
