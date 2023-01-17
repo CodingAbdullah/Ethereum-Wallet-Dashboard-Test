@@ -54,7 +54,7 @@ Examples:
 Scenario Outline: User selects Wallet Analytics Page to enter an incorrect wallet address for wallet analytics
 Given User lands on Wallet Analytics Page
 When  User enters an incorrect wallet address for wallet analytics <WalletAddress>
-Then  Display alert warning User, clear data if any
+Then  Display alert warning User clear data if any
 Examples:
 	| WalletAddress                                 |
 	| "234567893432"                                |	
