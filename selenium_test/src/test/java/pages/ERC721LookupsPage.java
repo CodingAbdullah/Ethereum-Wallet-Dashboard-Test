@@ -16,7 +16,10 @@ public class ERC721LookupsPage {
 	@FindBy(xpath="//nav//form//button")
 	private WebElement navbarButtonElement;
 	
-	@FindBy(xpath="//div[@class='App']//div[2]//nav//div[3]//table//tbody//tr")
+	@FindBy(xpath="//nav//div[@class='alert']//div[1]")
+	private WebElement navbarAlertElement;
+	
+	@FindBy(xpath="//div[@class='App']//div[2]//nav//div[3]//table//tbody//a")
 	private List<WebElement> sidebarSelectionElements;
 	
 	@FindBy(xpath="//div[@class='App']//div[4]//footer//div[@class='container']//p[1]//a")
@@ -201,5 +204,9 @@ public class ERC721LookupsPage {
 
 	public WebElement getErc721LookupsSalesTableElement() {
 		return erc721LookupsSalesTableElement;
+	}
+	
+	public WebElement getNavbarAlertElement() {
+		return navbarAlertElement;
 	}
 }

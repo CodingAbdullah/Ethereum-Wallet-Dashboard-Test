@@ -54,7 +54,7 @@ Examples:
 Scenario Outline: User selects ERC721 Collection Page to enter incorrect information for ERC721 lookups
 Given User lands on ERC721 Lookups Page
 When  User enters incorrect information for ERC721 lookups <ContractAddress> <ID>
-Then  Display alert warning User, clear data if any
+Then  Display alert warning User clear data if any
 Examples:
 	| ContractAddress                               |  ID  |
 	| "234567893432"                                |  345 |	
