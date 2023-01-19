@@ -37,7 +37,7 @@ The feature files are written in plain English, Gherkin. These consists of steps
 
 There is a `.jar` file added to this project for a compact import to any workspace, for the purposes of learning and investigating. It also contains a bash script in the root directory of this project which can be executed, downloading all the files, directories, and packages to the Desktop.
 
-Please note that you will need to run this as a maven project and import the dependencies outlined in the pom.xml file of this project. The bash script only allows for preliminary setup. 
+Please note that you will need to run this as a maven project and import the dependencies outlined in the `pom.xml` file of this project. The bash script only allows for preliminary setup. 
 
 
 
