@@ -21,6 +21,8 @@ The features package contains the feature files that have the behaviour-oriented
 The step definitions package contains the code implementation of these feature files and their pages. This is where all the 
 test cases run and evaluated based on their behaviour to see if the output produced is the desired outcome.
 
+
+
 ### `Cucumber Framework`
 
 <a href="https://cucumber.io/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cucumber/cucumber-plain-wordmark.svg" alt="express" width="100" height="100"/></a>
@@ -29,11 +31,15 @@ A framework that is essentially a testing tool that supports Behavior Driven Dev
 
 The feature files are written in plain English, Gherkin. These consists of steps outlined by Given, When, Then, And scenarios. These are then mapped out individually using a Step definition equivalent class which contains the code implementation of these steps. It is here that, with Assert statements, tests cases are verified.
 
+
+
 ### `Start Here`
 
 There is a `.jar` file added to this project for a compact import to any workspace, for the purposes of learning and investigating. It also contains a bash script in the root directory of this project which can be executed, downloading all the files, directories, and packages to the Desktop.
 
 Please note that you will need to run this as a maven project and import the dependencies outlined in the pom.xml file of this project. The bash script only allows for preliminary setup. 
+
+
 
 ### `Links`
 
