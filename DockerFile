@@ -1,7 +1,6 @@
-# Using Maven as the base image
 FROM maven:3.6.3-jdk-11 as build
 
-# Copying the dependenices of the pom.xml file and adding them to project using the mvn command
+# Using maven base image, copy the dependenices of the pom.xml file and adding them to project using the mvn command
 COPY pom.xml .
 RUN mvn dependency:go-offline
 
