@@ -46,4 +46,10 @@ cd pages
 touch AboutPage.java AddressToENSPage.java AnalyticsSelectionPage.java ENSERC721SelectionPage.java ENSLookupsPage.java ENSToAddressPage.java ENSTransfersByIdPage.java ENSTransfersByNamePage.java ERC20CollectionPage.java ERC20TokenHoldingsPage.java ERC20TokenPricesPage.java ERC721CollectionPage.java ERC721HoldingsPage.java ERC721LookupsPage.java EthDashboardHomePage.java GasStationPage.java PricesPage.java TokenAnalyticsPage.java WalletAnalyticsPage.java
 
 cd ..
-echo 'Project setup complete'
+echo 'Project setup complete!' 
+echo 'Please make sure to have Maven, Jave (JRE/JDK) to proceed. Add the following dependencies from the Maven repository:'
+echo '1: Selenium-Java'
+echo '2: Cucumber-Java'
+echo '3: Cucumber-Junit'
+echo '4: Cucumber-Core'
+echo '5: JUnit'
